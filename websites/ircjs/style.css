@@ -1,0 +1,37 @@
+#input {
+	font-family: Helvetica;
+	bottom:7px;
+	position:absolute;
+	vertical-align: bottom;
+	width: 99%
+}
+#IRCClient {
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	right:-10px;
+	height:100%;
+	width:100%;
+}
+#speech {
+	margin-left: 1%;
+	width:100%
+}
+#send {
+	width:100%;
+}
+#speechbox {
+	width:90%;
+	float:left;
+}
+#buttonbox {
+	width:10%;
+	float:right;
+}
+#textoutput {
+	margin-left: 1%;
+	font-family: Helvetica;
+	position:absolute;
+	bottom:32px;
+}

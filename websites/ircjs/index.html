@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="websock.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>JavaScript IRC Client</title>
+</head>
+<body>
+	<div id="IRCClient" onclick="refocus();">
+		<span id="textoutput">
+			Usage: /set username nick server
+		</span>
+		<div id="input">
+			<div id="speechbox">
+				<input type="text" id="speech" class="textbox" onkeypress="return onenterpress(event);" value="test" />
+			</div>
+			<div id="buttonbox">
+				<input type="button" onclick="button();" id="send" class="button" value="Send" />
+			</div>
+		</div>
+	</div>
+</body>	
