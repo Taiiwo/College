@@ -1,4 +1,21 @@
-Verti 2.0 by HTML5 UP
+Verti Web Task
+============
+
+Intro
+-------
+In this task, we were told to create a website mock-up, and some notes for a presentation.
+
+Notes for Presentation
+-------------------------------
+
+ScreenShot
+----------------
+<img src="http://i.imgur.com/UGVxEtt.png" />
+
+Licence
+-------
+
+###Verti 2.0 by HTML5 UP
 html5up.net | @n33co
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
