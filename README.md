@@ -11,4 +11,5 @@ webpages due to a lot of my work being examples of web interfaces. Those website
 Queries
 -------
 
-If you're unfamilliar with Git and/or GitHub, feel free to shoot me a question. It will change your life!
+If you're unfamilliar with Git and/or GitHub or you just need me for college stuff, feel free to shoot me a question. Git will change your life! Here's my email:
+<code>Tylerzacc@gmail.com</code>
