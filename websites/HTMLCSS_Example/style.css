@@ -1,0 +1,35 @@
+.BlueBox {
+	opacity:0.5;
+	position:absolute;
+	left:50px;
+	width:300px;
+	height:150px;
+	background-color:#40B3DF;
+}
+.RoundedBox {
+	font-family:Verdana;
+	padding:20px;
+	border:solid;
+	border-radius:20px;
+}
+.GreenBox {
+	opacity:0.3;
+	position:absolute;
+	left:120px;
+	width:100px;
+	height:200px;
+	background-color:#8AC007;
+}
+.div4 {
+	letter-spacing:12px;
+}
+.div5 {
+	color:#40B3DF;
+}
+.span1 {
+	background-color:#B4009E;
+	color:#ffffff;
+}
+.div6 {
+	color:#000000;
+}

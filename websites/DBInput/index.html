@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link href="./style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h1 id="title"> Tyler's Amazing Form</h1>
+	<div class="dataform">
+		<form action="#" method="POST">
+			<fieldset class="field">
+				<legend>Give me your DATA</legend>
+				First Name:<input id="fname" class="textbox" value="" type="text" maxlength="10" /><br />
+				Last Name:<input id="lname" value="" class="textbox" type="text" /><br />
+				Email Address:<input id="email" class="textbox" value="" type="email" maxlength="10" /><br />
+				Age:<input id="age" class="textbox" value="" type="range" pattern="/sdval="\d{3}"/" /><br />
+				Date of Birth:<input type="date" id="DOB" class="textbox" /><br />
+				Race:<select class="textbox">
+					<option value="volvo">White</option>
+					<option value="saab">Black</option>
+					<option value="opel">Asian</option>
+					<option value="audi">This is not very PC</option>
+				</select>
+			</fieldset>
+			<input type="submit" id="submit" value="Submit Form" />
+		</form>
+	</div>
+</body>
+<html>

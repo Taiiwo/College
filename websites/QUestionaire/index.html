@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Questionaire</title>
+	<style>
+	html,body{
+		font-family:Verdana;
+	}
+	</style>
+</head>
+<body>
+	<form action="/">
+		<h1>Questionare</h1><br />
+		<p class="questions">Do you shop online? --Boolean yes/no question</p><br />
+		Yes:<input type="radio" name="question1" value="Yes" />
+		No:<input type="radio" name="question1" value="No" />
+		<p class="question">How often? --Uses time ranges so everybody is categorizable</p><br />
+		Never:<input type="radio" name="question2" value="never" />
+		Sometimes:<input type="radio" name="question2" value="sometimes" />
+		A lot:<input type="radio" name="question2" value="alot" />
+		<p class="question">How much do you spend per month? --Again, categorized</p><br />
+		£0:<input type="radio" name="question3" value="0" />
+		£10:<input type="radio" name="question3" value="10" />
+		£20:<input type="radio" name="question3" value="20" />
+		£30+:<input type="radio" name="question3" value="30" />
+		<p class="question">What do you buy online? --Multi select, so you can give a range of answers.</p><br />
+		Food:<input type="checkbox" name="question4" value="food" />
+		Clothes:<input type="checkbox" name="question4" value="clothes" />
+		Bits:<input type="checkbox" name="question4" value="bits" />
+		Tech:<input type="checkbox" name="question4" value="tech" />
+		Other:<input type="checkbox" name="question4" value="other" />
+		<p class="question">Why do you buy online? If you don't buy online, why not? --Again, easily categorized.</p><br />
+		Convinience:<input type="radio" name="question5" value="convinience" />
+		Cheap:<input type="radio" name="question5" value="cheap" />
+		Selection:<input type="radio" name="question5" value="selection" />
+		<input type="submit" value="Submit" />
+		
+</body>
+</html>

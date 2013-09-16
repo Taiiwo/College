@@ -1,0 +1,38 @@
+html {
+	font-family: Verdana;
+}
+.dataform {
+	margin:auto;
+	text-align:right;
+	width:350px;
+	box-shadow: 0px 0px 20px Black;
+}
+.textbox {
+	position:relative;
+	margin-bottom:3px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:3px;
+	
+	
+}
+#title {
+	text-align:center;
+}
+#submit {
+	margin:auto;
+	text-align:center;
+	width:100%;
+	height:35px;
+}
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+#field {
+	position:relative;
+	margin-bottom:10px;
+}
