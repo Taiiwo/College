@@ -7,6 +7,7 @@ In this task, we were told to create a website mock-up, and some notes for a pre
 
 Notes for Presentation
 -------------------------------
+In ./Notes.md
 
 ScreenShot
 ----------------
