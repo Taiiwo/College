@@ -1,5 +1,6 @@
 function button(){
-	print( document.getElementById('speech').value );
+	var input = document.getElementById('speech').value;
+	print( input );
 	document.getElementById('speech').value = '';
 }
 function print(string){

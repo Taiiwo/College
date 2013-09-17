@@ -16,7 +16,9 @@
 }
 #speech {
 	margin-left: 1%;
-	width:100%
+	position: relative;
+	
+	width: 98.5%
 }
 #send {
 	width:100%;
