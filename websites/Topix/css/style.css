@@ -431,3 +431,30 @@
 		{
 			color: inherit;
 		}
+.image {
+	max-width:200px;
+	max-height:200px;
+}
+.product {
+	float: left;
+	width: 200px;
+	margin: 10px;
+	margin-top:0px;
+	max-height:300px;
+}
+.producttext {
+	position: relative;
+	margin-top:0px;
+	top:-20px;
+	
+}
+.productdesc {
+	position:relative;
+	margin-top:0px;
+	top:-40px;
+}
+#product5, #product6 {
+	position: relative;
+	left: 630px;
+	bottom: 230px;
+}
