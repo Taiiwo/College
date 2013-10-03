@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+			<title>Another JavaScript Tutorial</title>
+		</head>
+		<body>
+
+		<p>Click the button to demonstrate the prompt box.</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="greeting"></p>
+
+		<script>
+			function isNumber(n) {
+				return !isNaN(parseFloat(n)) && isFinite(n);
+			}
+			function validateNum(num){ //This defines a function for validating a number.
+			    if (num == "") {// Checks that the number has been entered (1)
+			        return false;
+			    }
+			    else if (!isNumber(num)) { // Checks if the number is 6 characters long( 2)
+			        return false;
+			    }
+				else if (!num >= 0){
+					return true;
+				}
+			    else { // ( 3)
+			        return  true;// if everything checks out, the function returns true
+			    }
+			}
+			function myFunction() {// this function is called by a button in HTML
+			    var message;
+			    var num = prompt("Please enter a number","");// Asks the user for input
+			    if (validateNum(num)){
+			        message = "Hello. The number "+ num +"is a valid number." ;
+			    }
+			    else{
+			        message = "Please click again and enter a valid number";
+			    }
+			    $("#greeting").html(message);// Publishes the message to an HTML element    
+}
+		</script>
+
+	</body>
+</html>
