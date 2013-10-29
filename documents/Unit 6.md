@@ -120,5 +120,8 @@ As you can see, the for loop cyles through items in the array 'names', and alert
 
 ##Task 6 - Explaining Arrays
 
-An array is a type of variable that contains multiple values. These are useful to iterate through 
+An array is a type of variable that contains multiple values. These are useful to iterate through. An example of an array is given above. Arrays can contain multiple data types, including other arrays. There are also different types of arrays. There are multidimensional, and assosiative arrays.
 
+Multidimentional arrays are arrays that contain other arrays. These are useful for containing essentailly records like a database, but are flexible to do almost anything.
+
+Assosiative arrays are arrays that are index by both numbers and strings. This is useful for arrays that contains a largely variant amout of data, as the data can be acacessed easily.

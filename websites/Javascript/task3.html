@@ -1,0 +1,19 @@
+<span id="text"></span>
+<script>
+	var numbers = [];
+	var data;
+	for (var i=0; 1; i++){
+		data = prompt('Number ' + i);
+		if (data == 'exit' || data == "") {
+			break;
+		}
+		else {
+			numbers.push(data);
+		}
+	}
+	var sum = 0;
+	for (i=0; i < numbers.length; i++) {
+		sum += parseInt(numbers[i]);
+	}
+	document.getElementById('text').innerHTML = sum;
+</script>
