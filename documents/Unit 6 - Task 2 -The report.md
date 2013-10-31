@@ -6,12 +6,12 @@ In this report I will explain sequence selection and iteration as used in progra
 ##Part 1 - Explaining a Sequence Statement
 A sequence statement is anything that happens in a sequence. Mostly executed inside other statements.
 
-<code>
+```Javascript
 
 var variable = 10;
 document.getElementById.innerHTML = variable;
 var x = variable + 10;
-</code>
+```
 
 As you can see, These statements are all on the same line, and are simple. They only execute once.
 
@@ -25,7 +25,7 @@ Here is an example of sequence in C++. (Just a side note, asking people to scree
 A select statement is a statement that selects a value for comparison. Examples of select statements include: if, else if, else, and while.
 
 Here is an example of some code that checks is a number is validy by the system's terms:
-<code>
+```JavaScript
 
     function isNumber(n) {
         return !isNaN(parseFloat(n)) && isFinite(n);
@@ -55,14 +55,14 @@ Here is an example of some code that checks is a number is validy by the system'
         }
         $("#greeting").html(message);// Publishes the message to an HTML element    
     }
-</code>
+```
 
 If you look find the line with '(1)' at the end, you will see the first if statement.
-<code>
+```Javascript
     if (num == "") {/ Checks that the number has been entered (1)
         return false;
     }
-</code>
+```
 The stuff inside the brackets (num == ""), is a logical test. If you're familliar with maths, it's essentially asking if what is inside the brackets makes mathematical sense. If not, it's asking if "" is in the variable 'name'.
 
 If this test is valid (ie. num is in fact equal to "" (Nothing)) then the second line is executed, forcing the function to stop and returning false.
@@ -70,12 +70,12 @@ If this test is valid (ie. num is in fact equal to "" (Nothing)) then the second
 If the statement does not make sense, then the second line is ignored.
 
 Another example of a Select statement is 'if else'. Look at the statement at (2):
-<code>
+```JavaScript
 
 	else if (name.length <= 1) { // Checks if the name is longer that one character (2)
 		return false;
 	}
-</code>
+```
 
 This statement is exactly the same as an if statement, with the exception that it will only execute if the if statement in the line above fails the test.
 
@@ -88,13 +88,13 @@ Here is a screenshot example of a select statement in JavaScript.
 
 A iteration statement is a statement that cycles through data or executes mutiple times. The best example of a itteration statement is a for loop through an array.
 
-<code>
+```JavaScript
 
 	var names = ['Bob','Bill','John','James'];// defining a variable
 	for (var i = 0; i < names.length; i++) {// Creating to loop where i is any number					//between 0 and the length of names
 		alert('Hello ' + names[i]);// This will alert the user with every name
 	}
-</code>
+```
 
 As you can see, the for loop cyles through items in the array 'names', and alerts for each name.
 
