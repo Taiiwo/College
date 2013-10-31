@@ -136,4 +136,4 @@ Other maintainence costs include mainly servers and other hardware that are requ
 
 ###Expandability
 
-Expandability of code is 
+Expandability of code is important in a corparite environment as your code may be expanded by anyone in the software department. The expandability of languages could include that libraries that it is compatable with. It could also include the readability of the code, as for someone to expand the code, they must first understand it. Most languages are expandable, but the way which you program may not be. It is sometimes of priority to write a program core, and a system for implementing modules. This way you can distribilte the completeion or improvement of each individual module to a different person, and that person would only need to know the data that is inputted into the module, what the module is supposed to output, and the data types of that data.
