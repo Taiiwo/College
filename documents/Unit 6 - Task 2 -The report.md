@@ -17,7 +17,7 @@ As you can see, These statements are all on the same line, and are simple. They 
 
 Here is an example of sequence in C++. (Just a side note, asking people to screenshot code is useless and awkward for everyone.)
 
-<img src="http://i.cubeupload.com/maAqUq.png" />
+<img src="http://i.cubeupload.com/maAqUq.png" style="max-width:100%;" />
 
 -----------------
 
@@ -59,7 +59,7 @@ Here is an example of some code that checks is a number is validy by the system'
 
 If you look find the line with '(1)' at the end, you will see the first if statement.
 ```Javascript
-    if (num == "") {// Checks that the number has been entered (1)
+    if (num == "") {/ Checks that the number has been entered (1)
         return false;
     }
 ```
@@ -81,7 +81,7 @@ This statement is exactly the same as an if statement, with the exception that i
 
 Here is a screenshot example of a select statement in JavaScript.
 
-<img src="http://i.cubeupload.com/EOV31C.png" />
+<img src="http://i.cubeupload.com/EOV31C.png" style="max-width:100%;" />
 
 
 ##Part 3 - Explaining an Itteration Statement
@@ -100,6 +100,40 @@ As you can see, the for loop cyles through items in the array 'names', and alert
 
 Here's an example of iteration in Python.
 
-<img src="http://i.cubeupload.com/0sMXv7.png" />
+<img src="http://i.cubeupload.com/0sMXv7.png" style="max-width:100%;" />
 
 ---------------------
+
+##Part 4 - Influential Factors
+
+When writing a program, it is important to select a language that suits your requirements.
+
+###Customer Requirements
+
+An importants factor in selecing the correct language is to see whether it is supported on a platformt that the end user has convinient access to.
+
+###Organizational Policy
+
+As a programmer, it is your job to make your code both functional, and readable. The organizational policy must be as simple as possible in order to make you code easy to acces and expand upon.
+
+###Suitibility in Terms of Available Features and Tools
+
+Probably the most important factor in deciding a language is whether or not it contains the tools to do what you want quickly and efficiently. An example of this is popular integration with a particular task. PHP for example is widely supported and used in webservers, so it is a bit language to consider when writing web applications.
+
+###Experience / Availability of Trained Staff
+
+Sometimes, it must be considered whether or not the staff currently employed are fluent in a particular language. Although it doesn't take long to learn a new language, small tasks present themselves where familliarising yourself or teaching others a new programming language would take longer that writing the code in a previously known language.
+
+###Reliability
+
+Reliability in terms of code is often referred to in terms of the compilation or interparitation of the code. For example, a low level language like C, would be reliable to execute extremely low level tasks, and the execute them efficiently, but due to this low level operation, it becomes inefficient to write C code that would be reliable on a high level. On the other hand, for high level tasks, languages such as Python are much less likely to make arithmetic mistakes. Although you lose the ability to manipulate data on a processor level, you gain the efficiency of having the  inperpariter do all of the data validation for you.
+
+###Development and Maintainence Costs
+
+Some language framworks require licencing costs. These costs are for proprietary libraries and such that are needed to run and develop software that incorparate software that has been predefined by the libraries. And example of this is Visual Studio, a software developed around a Windows proprietary graphical display framework.
+
+Other maintainence costs include mainly servers and other hardware that are required to run the software, and the regular maintainence of those servers.
+
+###Expandability
+
+Expandability of code is 
