@@ -59,7 +59,7 @@ Here is an example of some code that checks is a number is validy by the system'
 
 If you look find the line with '(1)' at the end, you will see the first if statement.
 ```Javascript
-    if (num == "") {/ Checks that the number has been entered (1)
+    if (num == "") {// Checks that the number has been entered (1)
         return false;
     }
 ```
