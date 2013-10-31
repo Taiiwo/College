@@ -1,9 +1,9 @@
 <center>Task 2 - The Report</center>
 ===================
 
-In this report I will explain sequence selection and iteration as used in programming, as well as the factors that influence the could of programming languages.
+In this report I will explain sequence selection and iteration as used in programming, as well as the factors that influence the choice of programming languages.
 
-##Task 2 - Explaining a Sequence Statement
+##Part 1 - Explaining a Sequence Statement
 A sequence statement is anything that happens in a sequence. Mostly executed inside other statements.
 
 <code>
@@ -15,7 +15,13 @@ var x = variable + 10;
 
 As you can see, These statements are all on the same line, and are simple. They only execute once.
 
-##Task 3 - Explaining a Select Statement
+Here is an example of sequence in C++. (Just a side note, asking people to screenshot code is useless and awkward for everyone.)
+
+<img src="http://i.cubeupload.com/maAqUq.png" />
+
+-----------------
+
+##Part 2 - Explaining a Select Statement
 A select statement is a statement that selects a value for comparison. Examples of select statements include: if, else if, else, and while.
 
 Here is an example of some code that checks is a number is validy by the system's terms:
@@ -31,7 +37,7 @@ Here is an example of some code that checks is a number is validy by the system'
         else if (!isNumber(num)) { // Checks if the number is 6 characters long( 2)
             return false;
         }
-    	else if (!num >= 0){
+        else if (!num >= 0){
     		return true;
     	}
         else { // ( 3)
@@ -73,8 +79,12 @@ Another example of a Select statement is 'if else'. Look at the statement at (2)
 
 This statement is exactly the same as an if statement, with the exception that it will only execute if the if statement in the line above fails the test.
 
+Here is a screenshot example of a select statement in JavaScript.
 
-##Task 5 - Explaining an Itteration Statement
+<img src="http://i.cubeupload.com/EOV31C.png" />
+
+
+##Part 3 - Explaining an Itteration Statement
 
 A iteration statement is a statement that cycles through data or executes mutiple times. The best example of a itteration statement is a for loop through an array.
 
@@ -87,5 +97,9 @@ A iteration statement is a statement that cycles through data or executes mutipl
 </code>
 
 As you can see, the for loop cyles through items in the array 'names', and alerts for each name.
+
+Here's an example of iteration in Python.
+
+<img src="http://i.cubeupload.com/0sMXv7.png" />
 
 ---------------------
