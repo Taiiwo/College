@@ -1,7 +1,7 @@
 <center>Task 2 - The Report</center>
 ===================
 
-In this report I will I will explain sequence selection and iteration as used in programming, as well as the factors that influence the could of programming languages.
+In this report I will explain sequence selection and iteration as used in programming, as well as the factors that influence the could of programming languages.
 
 ##Task 2 - Explaining a Sequence Statement
 A sequence statement is anything that happens in a sequence. Mostly executed inside other statements.
