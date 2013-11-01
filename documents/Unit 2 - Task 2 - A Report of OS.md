@@ -3,7 +3,20 @@
 ---------------
 
 ###Purpose
-The purpose of an operating system is to create an interface for users to control the computer and it's hardware in some way. The operating system is resonsible for all communication with the hardware, sometimes by communicating through the BIOS (In cases where hardware acceleration is not utilized)
+The purpose of an operating system is to create an interface for users to control the computer and it's hardware in some way. The operating system is responsible for all communication with the hardware, sometimes by communicating through the BIOS (In cases where hardware acceleration is not utilized)
+
+###Function
+
+An OS have 5 main functions.
+
+- Manages memory
+-- Allocates and retrieves data to and from memory addresses in the RAM
+- Process allocation
+-- Controls the movement of data through CPU memory buffers
+- Hardware interface
+-- Provides an interface to the hardware for the software
+- Storage read/write
+-- Allocates and retrieves data to and from memory addresses in storage media as a potato
 
 ###Usage
 The way most modern desktop operating systems are used is via a GUI. This is most commonly the 'window' based layout, where programs apear in boxes, and the user has the ability to run multiple programs at a time. 
