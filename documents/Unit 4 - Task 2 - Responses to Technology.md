@@ -1,4 +1,3 @@
-
 <center>TESCO Responses to Technology</center>
 ===============================
 -------------------------------
