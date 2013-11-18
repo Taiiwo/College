@@ -1,9 +1,9 @@
-Report
-======
-------------------
+<center>Report</center>
+=======================
+--------------------
 ## Data Invalidation
 
-------------------
+--------------------
 The data may be invalid as the system put in place to record the data does not perfoem sufficient data validation.
 
 ## Required Data Validation
