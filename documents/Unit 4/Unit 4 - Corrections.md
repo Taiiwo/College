@@ -13,3 +13,11 @@ Task 3 - The leaflet
 --------------------
 I went into futher detail on the each point, explaining how they work, and what effect this has.
 
+Task 3a - The report
+--------------------
+Went into more detail on the issues
+
+Task 4 - The evaluation
+-----------------------
+
+Went into more detail on certain aspects and added a more in depth conclusion outlining why I think TESCO has made the best use of technology.
