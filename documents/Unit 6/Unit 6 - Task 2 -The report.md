@@ -137,3 +137,10 @@ Other maintenance costs include mainly servers and other hardware that are requi
 ###Expandability
 
 Expandability of code is important in a corporate environment as your code may be expanded by anyone in the software department. The expandability of languages could include that libraries that it is compatible with. It could also include the readability of the code, as for someone to expand the code, they must first understand it. Most languages are expandable, but the way which you program may not be. It is sometimes of priority to write a program core, and a system for implementing modules. This way you can distribute the completion or improvement of each individual module to a different person, and that person would only need to know the data that is inputted into the module, what the module is supposed to output, and the data types of that data.
+
+##Apendix
+<!-- This is a copy and paste from above. -->
+Here is an example of sequence in C#. (Just a side note, asking people to screenshot code is useless and awkward for everyone.)
+
+<img src="http://i.cubeupload.com/maAqUq.png" style="max-width:100%;" />
+
