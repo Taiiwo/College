@@ -7,7 +7,7 @@ One purpose of an operating system is to create an interface for users to contro
 
 ###Function
 
-An OS have 5 main functions.
+An OS has 4 main functions.
 
 - Manages memory
     - Allocates and retrieves data to and from memory addresses in the RAM
@@ -29,13 +29,9 @@ An example of a GUI-based OS is 'elementaryOS'. elementaryOS is an Ubuntu based 
 On the other hand, and example of a command line OS is 'FreeBSD'. FreeBSD is a distribution of the BSD OS that focuses on free licencing. Due to the superior process distribution system, FreeBSD is a very popular server OS as it can deliver unmached speed and reliability. The only drawback of using FreeBSD is that due to the different pre-execution procedures, programs must be recompiled with special options in order to support the OS, and although all of the best and most popular server-oriented programs (Such as Apache and MySQL) have already been compiled, FreeBSD compilation is far down the list of priorities for most of the newer software, unfortunately.
 
 ####Feature comparison:
-<style>
-td {
-	text-align: right;
-}
-</style>
-<table>
-<tr> <td>**elementaryOS**</td>  <td>**Feature**</td>  <td>**FreeBSD**</td> </tr>
+
+<table style="text-align: center;">
+<tr> <td>elementaryOS</td>  <td>Feature</td>  <td>FreeBSD</td> </tr>
 <tr> <td>yes</td>  <td>GUI</td>  <td>no</td> </tr>
 <tr> <td>no</td>  <td>Low RAM Requirements</td>  <td>yes</td> </tr>
 <tr> <td>no</td>  <td>Low storage requirements</td>  <td>yes</td> </tr>
