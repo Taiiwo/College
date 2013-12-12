@@ -11,14 +11,14 @@ Data validation that would need to be performed by the input program would be a 
  
 ## The Data in the Database may be Inaccurate
 
-This is because the data input system is flawed, and allows invalid data.
+This could be because the data input system is flawed, and allows invalid data.
 
 ##What I did to Invalid Data
 
 To find invalid data, I made the graphs I required, but spotted anomalous results. When I found anomalous data, I corrected the data to what I thought it is supposed to be. This isn't ideal, but it is the best that can be done to invalid data.
 
 ##The Fields I Chose
-I chose were:
+The fields I chose were:
 
 ```
 Fault ID,	Date Logged, Fault Description, Customer ID, Chargeable, Tech Staff, Date Completed
