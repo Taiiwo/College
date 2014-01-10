@@ -3,7 +3,7 @@ Report
 ------------------
 ## Data Invalidation
 
-Data is invalid when it does not meet the pattern or criteria specified. For example, and credit card number is 11 numerical digits long, and if it doesn't meet that criteriea, it is definitely invalid. The data in the database may be invalid as the system put in place to record the data does not perform sufficient data validation.
+Data is invalid when it does not meet the pattern or criteria specified. For example, and credit card number is 11 numerical digits long, and if it doesn't meet that criteria, it is definitely invalid. The data in the database may be invalid as the system put in place to record the data does not perform sufficient data validation.
 
 ## Required Data Validation
 
@@ -11,7 +11,9 @@ Data validation that would need to be performed by the input program would be a 
  
 ## The Data in the Database may be Inaccurate
 
-This could be because the data input system is flawed, and allows invalid data.
+- Data input system is flawed
+- Deliberate mistakes
+- Data from poor source
 
 ##What I did to Inaccurate Data
 
