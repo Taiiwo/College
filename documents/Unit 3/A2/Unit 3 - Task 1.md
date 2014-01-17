@@ -9,10 +9,11 @@ systems to carry out and manage their operations, interact with their customers 
 marketplace.
 
 Executive Support Systems
--------------------------  
+----------------------
+##Features
 ### Description
-Executive support systems are designed to help senior management make strategic decisions. It gathers, analyses and
-summarises the key internal and external information used in the business.
-###Data Type
-The executive support system uses, gathers and analyses and
-summarises the key internal and external information used in the business.
+The system allows you to 
+### Data Type
+The executive support system uses, gathers and analyses and summarises the key internal and external information used in the business.
+### Who is it Used by
+Executive support systems are designed to help senior management make strategic decisions.
