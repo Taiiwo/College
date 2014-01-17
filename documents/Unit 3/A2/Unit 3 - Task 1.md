@@ -12,8 +12,10 @@ Executive Support Systems
 ----------------------
 ##Features
 ### Description
-The system allows you to 
+The system allows you to make decicions based on your staff's behavior. It creates graphs and charts, as well 
+as real time information.
 ### Data Type
-The executive support system uses, gathers and analyses and summarises the key internal and external information used in the business.
+The executive support system uses, gathers and analyses and summarises the key internal and external 
+information used in the business.
 ### Who is it Used by
 Executive support systems are designed to help senior management make strategic decisions.
