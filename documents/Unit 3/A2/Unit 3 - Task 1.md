@@ -3,13 +3,14 @@ Unit 3 - Task 1
 
 Intro
 -----
-An information system is an integrated set of components for 
-collecting, storing, and processing data and for 
-delivering information, knowledge, and digital products. Business 
-firms and other organizations rely on information
-systems to carry out and manage their operations, interact with their 
-customers and suppliers, and compete in the
-marketplace.
+An information system is an integrated set of components for collecting, 
+storing, and processing data and for delivering information, knowledge, 
+and digital products. Business firms and other organizations rely on 
+information systems to carry out and manage their operations, interact with  
+their customers and suppliers, and compete in the marketplace.
+
+###The Difference Between an Open and a Closed System
+
 
 Executive Support Systems
 ----------------------
@@ -20,12 +21,11 @@ behavior. It creates graphs and charts, as well
 as real time information.
 
 ### Data Type
-The executive support system uses, gathers and analyses and summarises 
-the key internal and external 
-information used in the business.
+The executive support system uses, gathers and analyses and summarises the 
+key internal and external information used in the business.
 
 ### Who is it Used by
-Executive support systems are designed to help senior management make 
+Executive support systems are designed to help senior management make
 strategic decisions.
 
 ###Hardware Required
@@ -70,4 +70,9 @@ Many systems will allow you to export the data as an array of formats
 from PDF to CSV to JPG.
 
 ###Control and Feedback Loops
+Control and feedback loops are put in place so that the users can input 
+their feedback, and the system can be updated to address their complaints. 
+For example, if someone doesn't like the way that the data is input, they 
+can reccomend it for change.
+
 
