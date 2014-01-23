@@ -41,7 +41,7 @@ strategic decisions.
 - Server software to gather data and make graphs
 - Client software to gather the information
 
-###Telecommunications Required
+###Telecomunications Required
 - Local network
 - Internet (Optional) - This is in case you want to factor in external information in order to process the data
 
@@ -61,7 +61,7 @@ period of time.
 ###Output
 The system will usually output the information in a series of graphs 
 and charts, as well as real time information that allow you to make 
-informed decisions.
+informed decicions.
 
 ###storage
 The data is stored on the server, usually on a SQL server in database 
@@ -72,7 +72,7 @@ The data is processed by the server in order to make the graphs and
 charts. Sometimes the data is specially formatted, such as 
 capitalizing names and such.
 
-###Retrieval
+###Retreival
 Many systems will allow you to export the data as an array of formats 
 from PDF to CSV to JPG.
 
