@@ -147,4 +147,8 @@ lists the important data for crafting, and also individual items,
 displaying graphs for their price over time.
 
 ###Storage
-
+Data received from the GW2 API is stored using MySQL as  you  can see here 
+:
+<a href="https://github.com/rubensayshi/gw2spidy/search?q=SQL&ref=cmdform">
+	https://github.com/rubensayshi/gw2spidy/search?q=SQL&ref=cmdform
+</a>
