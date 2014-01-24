@@ -111,7 +111,7 @@ data about the game in a format that is easy to import into a program
  - It does not pull lowest buying price, I wish it did, because then you 
     could choose instant sales over profit
  - components of an item - used to break down an item into it's components 
-	and figure out the cost
+    and figure out the cost
 
 ###The people who use the system
 The system is used almost exclsively by the players of GW2 in order to 
@@ -156,3 +156,10 @@ Data received from the GW2 API is stored using MySQL as  you  can see here
 ###Processing
 The data is processed on the server using PHP. The server uses PHP to order the data by specific values eg. profit; so that you can find the item that makes the most profit, again; for example.
 The server also makes graphs using logged data.
+
+Retreival
+---------
+The data is received by website from the API over HTTP in JSON format. The user receives the website marked up in HTML in an easy to read format.
+
+###Control and Feedback Loops
+GW2Spidy allows you to send them feedback via github. On GitHub, you can submit issues
