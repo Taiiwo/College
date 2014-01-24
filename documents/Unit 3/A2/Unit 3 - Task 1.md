@@ -109,7 +109,7 @@ data about the game in a format that is easy to import into a program
 (JSON). The particular data pulled(Think of TP like eBaY):
  - lowest selling price - used to calculate cost
  - It does not pull lowest buying price, I wish it did, because then you 
-	could choose instant sales over profit
+    could choose instant sales over profit
  - components of an item - used to break down an item into it's components 
 	and figure out the cost
 
@@ -152,3 +152,7 @@ Data received from the GW2 API is stored using MySQL as  you  can see here
 <a href="https://github.com/rubensayshi/gw2spidy/search?q=SQL&ref=cmdform">
 	https://github.com/rubensayshi/gw2spidy/search?q=SQL&ref=cmdform
 </a>
+
+###Processing
+The data is processed on the server using PHP. The server uses PHP to order the data by specific values eg. profit; so that you can find the item that makes the most profit, again; for example.
+The server also makes graphs using logged data.
