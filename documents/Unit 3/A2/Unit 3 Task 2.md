@@ -1,4 +1,0 @@
-Suggesting Information systems
-==============================
-
-##Intro
