@@ -1,4 +1,4 @@
-\Data Flow Diagrams
+Flow Charts
 ==================
 Register
 --------
