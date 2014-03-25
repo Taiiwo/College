@@ -1,7 +1,10 @@
 Unit 6 - Assignment 2 - Task 2b
 ===============================
 
-| Field Name | Type | Length | Notes                         | Required  | Type Justification | Length Justification |
+Users Table
+-----------
+
+| Field Name | Type | Length | Notes | Required  | Type Justification | Length Justification |
 |:---------- |:----:|:------:|:-----                         |:--------: |--------------------|----------------------|
 | Customer ID | int | Auto	 | Used to identify the user and make sure that no two users get confused | Yes | The data will always be an integer | The data will increment automatically |
 | First name | Char | 50     | The first name of the user    | Yes       | First name is a string, and therefore should use char type | 50 should be sufficient to fit a reasonable length name. |
@@ -12,3 +15,7 @@ Unit 6 - Assignment 2 - Task 2b
 | Provisional # | Char | 19 | Used to sign up for driving tests | Yes | It is a Char type as it made of both characters and numbers | Length is the same as that on the licence.|
 | Address | Char | 100 | User's address 					| Yes | Address contains letters, numbers, and symbols | 100 chars should fit any address |
 | Email | 30 | Char | Used to contact the user and confirm payments | Yes | An email can contain numbers, letters, and symbols. | 30 chars should fit any email address |
+| Gender | Boolean | Fixed | The gender of the user | No | There can only be one of two values | Boolean values have a fixed length |
+
+Bookings Table
+---------------
