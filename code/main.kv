@@ -1,0 +1,17 @@
+<MainWidget>:
+	BoxLayout:
+		orientation: "horizontal"
+		BoxLayout:
+			size_hint_x: 0.5
+			orientation: "vertical"
+			TextInput:
+				text: "fuck"
+				id: kvBox
+				size_hint_y: 0.9
+			Button:
+				text: "Load Kivy"
+				on_release: root.loadKivy(kvBox, buildBox)
+				size_hint_y: 0.1
+		BoxLayout:
+			id: buildBox
+			size_hint_x: 0.5
