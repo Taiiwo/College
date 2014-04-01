@@ -1,17 +1,44 @@
 <MainWidget>:
+	kvBox:kvBox
 	BoxLayout:
+#main box
 		orientation: "horizontal"
 		BoxLayout:
+	#editor
 			size_hint_x: 0.5
 			orientation: "vertical"
 			TextInput:
-				text: "fuck"
+				text: root.getFile()
 				id: kvBox
 				size_hint_y: 0.9
-			Button:
-				text: "Load Kivy"
-				on_release: root.loadKivy(kvBox, buildBox)
-				size_hint_y: 0.1
+			BoxLayout:
+		#control area
+				size_hint: 1, 0.1
+				orientation: "horizontal"
+				Button:
+					text: "Render"
+					on_release: root.loadKivy(kvBox, buildBox)
+					size_hint: 1, 1
+				Button:
+					text: "Load From File"
+					size_hint: 1, 1
+					on_release: root.loadFromFile()
+				Button:
+					text: "Save to File"
+					size_hint: 1,1
+		#/control area
+	#/editor
 		BoxLayout:
+	#build area
 			id: buildBox
 			size_hint_x: 0.5
+	#/build area
+<LoadFromFile>:
+	BoxLayout:
+		orientation: "vertical"
+		FileChooserIconView:
+			id: file
+		Button:
+			size_hint: 1, 0.1
+			text: "load"
+			on_release:root.loadFromFile(file)
