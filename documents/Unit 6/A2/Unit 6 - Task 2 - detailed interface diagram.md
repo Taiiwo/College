@@ -11,5 +11,5 @@ Register
 
 Booking
 -------
-<img src="http://i.imgur.com/91ykhZo.jpg" />
+<img src="http://i.imgur.com/zBheoKm.png" />
 
