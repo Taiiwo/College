@@ -12,3 +12,17 @@ Unit 6 - Assignment 2 - Task 2b
 | Provisional # | Char | 19 | Used to sign up for driving tests | Yes | It is a Char type as it made of both characters and numbers | Length is the same as that on the licence.|
 | Address | Char | 100 | User's address 					| Yes | Address contains letters, numbers, and symbols | 100 chars should fit any address |
 | Email | 30 | Char | Used to contact the user and confirm payments | Yes | An email can contain numbers, letters, and symbols. | 30 chars should fit any email address |
+
+Benefits of using a multitude of datatypes
+------------------------------------------
+Using many datatypes is useful to developers as it makes it easy to perform tasks 
+on variables that would require more, and more complex code to have performed 
+otherwise. This saves a lot of time, and improves the quality of code. An example 
+of this is if we had two dates, say a date of registration and a date of birth. 
+To calculate the age of the person at registration if the datatypes are 'date', 
+we can simply subtract the dates from eachother. If we did not used the correct 
+type, and selected string instead, it would take more complex programming to 
+convert the date in a string form into a number that we can work with, and then 
+we'd have to format it back into string format. As you can imagine, this is a 
+very laborious way of doing things, and it saves a lot of time and effort if we 
+use the correct datatypes when writing our code.
