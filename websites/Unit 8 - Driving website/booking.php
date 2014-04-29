@@ -1,19 +1,14 @@
 <?php
 	//connect to db
-	$db = connect();
+	//$db = connect();
 
 	$idre = '.*';
 	$sessionre = '.*';
 
-	$error = 0
+	$error = 0;
 	//Get variables from front page
-	$time = mysql_real_escape_string($_REQUEST['time']);
-	if (preg_match('^[00-12]:[00-60]$',$time)) {
-		$error = 1;
-		echo "Bad time";
-	}
-	$date = mysql_real_escape_string($_REQUEST['date']);
-	if (preg_match('^[0-31]/[0-12]/[0000-2014]$',$date)) {
+	$date = mysql_real_escape_string($_REQUEST['datetime']);
+	if (preg_match('^[0-31]:[0-12]:[0000-2014]/[00-12]:[00-60]$',$date)) {
 		$error = 1;
 		echo "Bad Date";
 	}
