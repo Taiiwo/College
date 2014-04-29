@@ -34,7 +34,7 @@ class MainWidget(FloatLayout):
 #			return False
 		self.kvBox.text = f.read()
 		print dir(self)
-		self.remove_widget(self.popup)
+		self.remove_widget(LoadFromFile())
 class LoadFromFile(Popup):
 	def loadFromFile(self,file):
 		path = os.path.join(file.path, file.selection[0])
