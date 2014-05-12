@@ -1,0 +1,23 @@
+<MainWidget>:
+	pizzaTab: pizzaTab
+	BoxLayout:
+		orientation: 'horizontal'
+		TabbedPanel:
+			do_default_tab: False
+			TabbedPanelItem:
+				id: pizzaTab
+				text: root.pizzaInit()
+			TabbedPanelItem:
+				text: 'Sides'
+			TabbedPanelItem:
+				text: 'Drinks'
+		BoxLayout:
+			size_hint: 0.4, 1
+			orientation: 'vertical'
+			TextInput:
+				id: receipt
+				size_hint: 1, 0.9
+			Button:
+				text: 'Go!'
+				size_hint: 1, 0.1
+		
