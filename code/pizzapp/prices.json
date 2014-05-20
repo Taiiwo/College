@@ -1,0 +1,38 @@
+{
+	"pizzas": [
+		["Hawaiian", 3.00 ],
+		["Tuna", 3.00 ],
+		["Illuminati", 3.00 ],
+		["BBQ", 3.00 ],
+		["Kangaroo", 3.00 ],
+		["Bacon", 3.00 ],
+		["Pepperoni", 3.00 ],
+		["Whale", 3.00 ],
+		["Garlic", 3.00 ],
+		["Cheese", 3.00 ],
+		["Ostrich", 3.00 ],
+		["Chocolate", 3.00 ],
+		["Meat Feast", 3.00 ],
+		["Alligator", 3.00 ],
+		["Vegan", 3.00 ]
+	],
+	"pizzaSizes": {
+		"Small": 0.5,
+		"Medium": 0.7,
+		"Large": 1
+	},
+	"sides": [
+		["Chicken Wangs", 2.50],
+		["Ribs", 2.50],
+		["BBQ Pork", 2.50],
+		["Chips", 2.50],
+		["Cheesy Chips", 2.50],
+		["Salad", 2.50],
+		["Chicken feet", 2.50],
+		["Coldslow", 2.50],
+		["Fried onions", 2.50],
+		["Picked eggs", 2.50],
+		["Pickled pickles", 2.50],
+		["Doritoes", 2.50]
+	]
+}
