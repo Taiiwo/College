@@ -32,6 +32,9 @@
 				</header>
 				<footer>
 					<a href="#first" class="button scrolly">Learn more</a>
+					<br />
+					<br />
+					<a href="#login" class="button scrolly">Login</a>
 				</footer>
 			</section>
 			
@@ -50,6 +53,7 @@
 							<br />
 							<br />
 							<a href="#firstsub" class="button scrolly">Features</a>
+							
 						</div>
 					</div>
 				</header>
@@ -104,7 +108,7 @@
 				</div>
 			</section>
 
-		<!-- Second -->
+	<!-- Second -->
 			<section class="main">
 				<header>
 					<div class="container" id="second" >
@@ -127,43 +131,117 @@
 							<div class="4u">
 								<section>
 									<div class="container">
-										<h2>Book a driving lesson now</h2>
-										<p>Here you can book your own driving lesson. It will be emailed to our receptionist for confirmation, and then it will be added to the calendar automatically.</p>
-					</div>
-				</header>
-				<div class="content style4 featured">
-					<div class="container small">
-						<form method="post" action="#">
-							<div class="row half">
-								<div class="6u"><input type="text" class="text" placeholder="Name" /></div>
-								<div class="6u"><input type="text" class="text" placeholder="Location" /></div><br /><br />
-								<div class="6u"><input type="text" class="text" placeholder="Time/Date" /></div>
-								<div class="6u"><input type="text" class="text" placeholder="Teacher" /></div>
-							</div>
-							<div class="row half">
-								<div class="12u"><textarea name="message" placeholder="Comment"></textarea></div>
-							</div>
-							<div class="row">
-								<div class="12u">
-									<ul class="actions">
-										<li><input type="submit" class="button" value="Book Lesson" /></li>
-										<li><input type="reset" class="button alt" value="Clear Form" /></li>
-									</ul>
-									<br />
-									<a href="#header" class="button alt scrolly">Home</a>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
+										<h2>Log in to your account</h2>
+										<p>Insert your username and password to gain access to the booking system, and other features</p>
+									</div>
+										<div class="content style4 featured">
+										<div class="container small">
+											<form method="post" action="#">
+												<div class="row half">
+													<div class="6u"><input type="text" class="text" placeholder="Username" /></div>
+													<div class="6u"><input type="text" class="text" placeholder="Password" /></div><br /><br />
+													
+												</div>
+												
+												<div class="row">
+													<div class="12u">
+														<ul class="actions">
+															<li><input type="submit" class="button" value="Login" /></li>
+															<li><input type="reset" class="button alt" value="Clear Form" /></li>
+														</ul>
+														<br />
+														<a href="#header" class="button alt scrolly">Home</a>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
 								</section>
 							</div>
+							
+						</div>
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<section>
+									<div class="container">
+										<h2>Register a new account</h2>
+										<p>In order to create a new account, you need to fill in the form below.
+										Creating an account will allow you to book lessons and access other information</p>
+									</div>
+										<div class="content style4 featured">
+										<div class="container small">
+											<form method="post" action="/register.php">
+												<div class="row half">
+													<div class="6u"><input name="fame" type="text" class="text" placeholder="First name" /></div>
+													<div class="6u"><input name="lame" type="text" class="text" placeholder="Last name" /></div><br /><br />
+													<div class="6u"><input name="phone type="text" class="text" placeholder="Contact number" /></div>
+													<div class="6u"><input name="email" type="text" class="text" placeholder="Email address" /></div><br /><br />
+													<div class="6u"><input name="hnum" type="text" class="text" placeholder="House number/name" /></div>
+													<div class="6u"><input name="post" type="text" class="text" placeholder="Postcode" /></div><br /><br />
+													
+												</div>
+												
+												<div class="row">
+													<div class="12u">
+														<ul class="actions">
+															<li><input type="submit" class="button" value="Register" /></li>
+															<li><input type="reset" class="button alt" value="Clear Form" /></li>
+														</ul>
+														<br />
+														<a href="#header" class="button alt scrolly">Home</a>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</section>
+							</div>
+							
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<section>
+									<div class="container">
+										<h2>Book a driving lesson now</h2>
+										<p>Here you can book your own driving lesson. It will be emailed to our receptionist for confirmation, and then it will be added to the calendar automatically.</p>
+									</div>
+										<div class="content style4 featured">
+										<div class="container small">
+											<form method="post" action="./booking.php">
+												<div class="row half">
+													<div class="6u"><input type="text" name="fname" class="text" placeholder="First Name" /></div>
+													<div class="6u"><input name="lname" type="text" class="text" placeholder="Last Name" /></div><br /><br />
+													<div class="6u"><input type="text" name="puloc" class="text" placeholder="Pickup Location" /></div>
+													<div class="6u"><input type="text" class="text" name="doloc" placeholder="Dropoff Location" /></div><br /><br />
+													<div class="6u"><input type="datetime" name="datetime" class="text" placeholder="Time/Date dd/mm/yyyy-hh:mm" /></div>
+													<div class="6u"><input type="text" class="text" name="TeacherID" placeholder="Teacher" /></div>
+												</div>
+												<div class="row half">
+													<div class="12u"><textarea name="message" placeholder="Comment"></textarea></div>
+												</div>
+												<div class="row">
+													<div class="12u">
+														<ul class="actions">
+															<li><input type="submit" class="button" value="Book Lesson" /></li>
+															<li><input type="reset" class="button alt" value="Clear Form" /></li>
+														</ul>
+														<br />
+														<a href="#header" class="button alt scrolly">Home</a>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</section>
+							</div>
+							
 						</div>
 					</div>
 				</div>
-			</section>
-			
-		
+			</section>		
 		<!-- Basic Elements -->
 		<!--
 			<section class="main">
