@@ -1,23 +1,68 @@
 <MainWidget>:
 	pizzaTab: pizzaTab
+	receipt: receipt
+	pizzaQuantity: pizzaQuantity
 	BoxLayout:
 		orientation: 'horizontal'
+		
 		TabbedPanel:
 			do_default_tab: False
 			TabbedPanelItem:
-				id: pizzaTab
-				text: root.pizzaInit()
+				text: 'Pizza'
+				BoxLayout:
+					orientation: 'vertical'
+					BoxLayout:
+						orientation: 'vertical'
+						id: pizzaTab
+						text: root.pizza_init()
+						size_hint: 1, 0.65
+					Button:
+						size_hint: 1, 0.05
+					GridLayout:
+						cols: 3
+						size_hint: 1, 0.3
+						ToggleButton:
+							group: 'size'
+							text: 'Small'
+							on_press: root.select_size(self)
+						ToggleButton:
+							group: 'size'
+							text: 'Medium'
+							on_press: root.select_size(self)
+						ToggleButton:
+							group: 'size'
+							text: 'Large'
+							on_press: root.select_size(self)
+						Label:
+							text: 'Quantity:'
+						TextInput:
+							id: pizzaQuantity
+							text: '1'
+							multiline: False
+							on_text_validate: root.select_quantity(self)
+						Button:
+							text: 'Add Pizza'
+							on_press: root.add_item(self)
 			TabbedPanelItem:
 				text: 'Sides'
+				on_press: root.sides_init(self)
 			TabbedPanelItem:
 				text: 'Drinks'
+			
 		BoxLayout:
 			size_hint: 0.4, 1
 			orientation: 'vertical'
 			TextInput:
 				id: receipt
 				size_hint: 1, 0.9
-			Button:
-				text: 'Go!'
+			BoxLayout:
+				orientation: 'horizontal'
 				size_hint: 1, 0.1
+				Button:
+					text: 'Go!'
+					size_hint: 0.9, 1
+				Button:
+					text: 'X'
+					size_hint: 0.1, 1
 		
+
