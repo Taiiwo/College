@@ -7,26 +7,23 @@ from kivy.uix.textinput import TextInput
 from kivy.app import App
 from kivy.lang import Builder
 class MainWidget(FloatLayout):
-	def pizzaInit(self):
-		pizzaTypes = ('Hawaiian','Tuna','Illuminati',
-				'BBQ','Kangaroo','Bacon','Pepperoni',
-				'Whale','Garlic','Cheese','Ostrich',
-				'Chocolate','Meat Feast','Aligator',
-				'Vegan')
-		lay = GridLayout(cols = 3)
-		for pizza in pizzaTypes:
-			blay = GridLayout(cols = 2)
-			blay.add_widget(Button(text=pizza, size_hint = (0.8,1)))
-			blay.add_widget(
-					TextInput(
-							size_hint = (0.2,1),
-							text = "0",
-							input_filter = 'int',
-							multiline = False
-					))
-			lay.add_widget(blay)
-		self.pizzaTab.add_widget(lay)
-		return 'Pizza'
+	pizzaTypes = [	('Hawaiian'	,	3.40),
+			('Tuna'		,	3.40),
+			('Illuminati'	,	3.40),
+			('BBQ'		,	3.60),
+			('Kangaroo'	,	3.60),
+			('Bacon'	,	3.60),
+			('Pepperoni'	,	3.80),
+			('Whale'	,	7.90),
+			('Garlic'	,	3.40),
+			('Cheese'	,	3.40),
+			('Ostrich'	,	5.60),
+			('Chocolate'	,	4.60),
+			('Meat Feast'	,	5.60),
+			('Aligator'	,	5.60),
+			('Vegan'	,	3.40)]
+	def addItem(self,name,price):
+		self.receipt.text += "%s: $%s"%(name, price)
 class MainApp(App):
 	def build(build):
 		return MainWidget()
