@@ -1,97 +1,68 @@
 <MainWidget>:
 	pizzaTab: pizzaTab
 	receipt: receipt
+	pizzaQuantity: pizzaQuantity
 	BoxLayout:
 		orientation: 'horizontal'
+		
 		TabbedPanel:
 			do_default_tab: False
 			TabbedPanelItem:
-				id: pizzaTab
-				Button:
-					text: "Hawaiian"
-					on_press: self.addItem("Hawaiian",3.4)
-
-
-				Button:
-					text: "Tuna"
-					on_press: self.addItem("Tuna",3.4)
-
-
-				Button:
-					text: "Illuminati"
-					on_press: self.addItem("Illuminati",3.4)
-
-
-				Button:
-					text: "BBQ"
-					on_press: self.addItem("BBQ",3.6)
-
-
-				Button:
-					text: "Kangaroo"
-					on_press: self.addItem("Kangaroo",3.6)
-
-
-				Button:
-					text: "Bacon"
-					on_press: self.addItem("Bacon",3.6)
-
-
-				Button:
-					text: "Pepperoni"
-					on_press: self.addItem("Pepperoni",3.8)
-
-
-				Button:
-					text: "Whale"
-					on_press: self.addItem("Whale",7.9)
-
-
-				Button:
-					text: "Garlic"
-					on_press: self.addItem("Garlic",3.4)
-
-
-				Button:
-					text: "Cheese"
-					on_press: self.addItem("Cheese",3.4)
-
-
-				Button:
-					text: "Ostrich"
-					on_press: self.addItem("Ostrich",5.6)
-
-
-				Button:
-					text: "Chocolate"
-					on_press: self.addItem("Chocolate",4.6)
-
-
-				Button:
-					text: "Meat Feast"
-					on_press: self.addItem("Meat Feast",5.6)
-
-
-				Button:
-					text: "Aligator"
-					on_press: self.addItem("Aligator",5.6)
-
-
-				Button:
-					text: "Vegan"
-					on_press: self.addItem("Vegan",3.4)
-
+				text: 'Pizza'
+				BoxLayout:
+					orientation: 'vertical'
+					BoxLayout:
+						orientation: 'vertical'
+						id: pizzaTab
+						text: root.pizza_init()
+						size_hint: 1, 0.65
+					Button:
+						size_hint: 1, 0.05
+					GridLayout:
+						cols: 3
+						size_hint: 1, 0.3
+						ToggleButton:
+							group: 'size'
+							text: 'Small'
+							on_press: root.select_size(self)
+						ToggleButton:
+							group: 'size'
+							text: 'Medium'
+							on_press: root.select_size(self)
+						ToggleButton:
+							group: 'size'
+							text: 'Large'
+							on_press: root.select_size(self)
+						Label:
+							text: 'Quantity:'
+						TextInput:
+							id: pizzaQuantity
+							text: '1'
+							multiline: False
+							on_text_validate: root.select_quantity(self)
+						Button:
+							text: 'Add Pizza'
+							on_press: root.add_item(self)
 			TabbedPanelItem:
 				text: 'Sides'
+				on_press: root.sides_init(self)
 			TabbedPanelItem:
 				text: 'Drinks'
+			
 		BoxLayout:
-			size_hint: 0.4", 1
+			size_hint: 0.4, 1
 			orientation: 'vertical'
 			TextInput:
 				id: receipt
 				size_hint: 1, 0.9
-			Button:
-				text: 'Go!'
+			BoxLayout:
+				orientation: 'horizontal'
 				size_hint: 1, 0.1
+				Button:
+					text: 'Go!'
+					size_hint: 0.9, 1
+				Button:
+					text: 'X'
+					size_hint: 0.1, 1
 		
+
