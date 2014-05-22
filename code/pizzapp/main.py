@@ -3,12 +3,14 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.tabbedpanel import TabbedPanel
 from kivy.uix.togglebutton import ToggleButton
+from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
 from kivy.app import App
 from kivy.lang import Builder
 class MainWidget(FloatLayout):
 	#define some root vars
 	productDB = {}
+
 	selectedProduct = []
 	#Size defaults to medium
 	selectedSize = 'Medium'
@@ -34,20 +36,27 @@ class MainWidget(FloatLayout):
 	#Monster function that will keep the receipt up to date
 	def update_receipt(self):
 		self.receipt.text = ""
+		total = float(0)
 		for i, product in enumerate(self.allProducts):
 			productBill = ""
+			subTotal = float(0)
 			for subProduct in product['selected']:
+				subTotal += self.get_price(subProduct.text)
 				productBill += "%s $%s\n\t"%(subProduct.text, self.get_price(subProduct.text))
-			self.receipt.text += 'Item %s:\n\t%s %s\n\t%s\n'%(i + 1,product['quantity'], product['size'], productBill)
+			self.receipt.text += 'Item %s:\n\t%s %s\n\t%s\n\tSubtotal: $%s\n'%(i + 1,product['quantity'], product['size'], productBill, float(subTotal * float(self.selectedQuantity)))
+			total += subTotal
 		productBill = ""
+		subTotal = float(0)
 		for subProduct in self.selectedProduct:
+			subTotal += self.get_price(subProduct.text)
 			productBill += "%s $%s\n\t"%(subProduct.text, self.get_price(subProduct.text))
-		self.receipt.text += 'Current Item:\n\t%s %s\n\t%s\n'%(self.selectedQuantity, self.selectedSize, productBill)
-		
+		self.receipt.text += 'Current Item:\n\t%s %s\n\t%s\n\tSubtotal: $%s\n'%(self.selectedQuantity, self.selectedSize, productBill, float(subTotal * float(self.selectedQuantity)))
+		total += subTotal
+		self.receipt.text += 'Total: $%s'%(total)
 		
 				
 	def get_price(self, productName):
-		return self.productDB[productName]
+		return float(self.productDB[productName])
 	#run each time a pizza topping is selected
 	def select_topping(self, instance):
 		if instance.state == 'down':
@@ -79,6 +88,8 @@ class MainWidget(FloatLayout):
 			self.productDB[price[0]] = price[1]
 		for side in self.priceFileRead['sides']:
 			self.productDB[side[0]] = side[1]
+		for side in self.priceFileRead['drinks']:
+			self.productDB[side[0]] = side[1]
 		#create buttons
 		lay = GridLayout(cols = 3)
 		self.buttonArr = []
@@ -92,19 +103,48 @@ class MainWidget(FloatLayout):
 		self.pizzaTab.add_widget(lay)
 		return 'Pizza'
 		
+	def clear_receipt(self):
+		self.allProducts.remove(self.allProducts[len(self.allProducts) - 1])
+		self.update_receipt()
 		
-		########################
+		############################
 		##	Start sides tab	  ##
-		########################
+		############################
 		
 	def sides_init(self,instance):
 		lay = GridLayout(cols = 3)
 		for side in self.priceFileRead['sides']:
-			lay.add_widget(ToggleButton(text = side[0], on_press = self.select_side))
+			lay.add_widget(Button(text = side[0], on_press = self.select_side))
 		instance.add_widget(lay)
 	
-	def select_side(self, instance):
-		pass
+	def select_side(self,instance):
+		appended = 0
+		for product in self.allProducts:
+			if product['selected'][0].text == instance.text:
+				appended = 1
+				product['quantity'] += 1
+		if appended == 0:
+			self.allProducts.append({"selected": [instance,], "quantity": 1, "size":"Side"})
+		self.update_receipt()
+		############################
+		##    Start drinks tab    ##
+		############################
+	def drinks_init(self, instance):
+		lay = GridLayout(cols = 3)
+		for side in self.priceFileRead['drinks']:
+			lay.add_widget(Button(text = side[0], on_press = self.select_drink))
+		instance.add_widget(lay)
+	
+	def select_drink(self,instance):
+		appended = 0
+		for product in self.allProducts:
+			if product['selected'][0].text == instance.text:
+				appended = 1
+				product['quantity'] += 1
+		if appended == 0:
+			self.allProducts.append({"selected": [instance,], "quantity": 1, "size":"Drink"})
+		self.update_receipt()
+		
 class MainApp(App):
 	def build(build):
 		return MainWidget()

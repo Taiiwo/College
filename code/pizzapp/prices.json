@@ -19,7 +19,9 @@
 	"pizzaSizes": {
 		"Small": 0.5,
 		"Medium": 0.7,
-		"Large": 1
+		"Large": 1,
+		"Side": 0,
+		"Drink": 0
 	},
 	"sides": [
 		["Chicken Wangs", 2.50],
@@ -34,5 +36,17 @@
 		["Picked eggs", 2.50],
 		["Pickled pickles", 2.50],
 		["Doritoes", 2.50]
+	],
+	"drinks": [
+		["Cocacola",1],
+		["Pepsi",1],
+		["Diet Coke",1],
+		["Sprite",1],
+		["Fanta Orange",1],
+		["Tango Orange",1],
+		["Vanilla Coke",1],
+		["Cherry Coke",1],
+		["Coke Zero",1],
+		["Lilt",1]
 	]
 }
