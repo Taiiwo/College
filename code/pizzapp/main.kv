@@ -48,6 +48,7 @@
 				on_press: root.sides_init(self)
 			TabbedPanelItem:
 				text: 'Drinks'
+				on_press: root.drinks_init(self)
 			
 		BoxLayout:
 			size_hint: 0.4, 1
@@ -64,5 +65,6 @@
 				Button:
 					text: 'X'
 					size_hint: 0.1, 1
+					on_press: root.clear_receipt()
 		
 
