@@ -43,15 +43,15 @@ class MainWidget(FloatLayout):
 			for subProduct in product['selected']:
 				subTotal += self.get_price(subProduct.text)
 				productBill += "%s $%s\n\t"%(subProduct.text, self.get_price(subProduct.text))
-			self.receipt.text += 'Item %s:\n\t%s %s\n\t%s\n\tSubtotal: $%s\n'%(i + 1,product['quantity'], product['size'], productBill, float(subTotal * float(self.selectedQuantity)))
-			total += subTotal
+			self.receipt.text += 'Item %s:\n\t%s %s\n\t%s\n\tSubtotal: $%s\n'%(i + 1,product['quantity'], product['size'], productBill, float(subTotal * float(product['quantity'])))
+			total += subTotal * float(product['quantity'])
 		productBill = ""
 		subTotal = float(0)
 		for subProduct in self.selectedProduct:
 			subTotal += self.get_price(subProduct.text)
 			productBill += "%s $%s\n\t"%(subProduct.text, self.get_price(subProduct.text))
 		self.receipt.text += 'Current Item:\n\t%s %s\n\t%s\n\tSubtotal: $%s\n'%(self.selectedQuantity, self.selectedSize, productBill, float(subTotal * float(self.selectedQuantity)))
-		total += subTotal
+		total += subTotal * float(self.selectedQuantity)
 		self.receipt.text += 'Total: $%s'%(total)
 		
 				
@@ -104,8 +104,9 @@ class MainWidget(FloatLayout):
 		return 'Pizza'
 		
 	def clear_receipt(self):
-		self.allProducts.remove(self.allProducts[len(self.allProducts) - 1])
-		self.update_receipt()
+		if len(self.allProducts) > 0:
+			self.allProducts.remove(self.allProducts[len(self.allProducts) - 1])
+			self.update_receipt()
 		
 		############################
 		##	Start sides tab	  ##
