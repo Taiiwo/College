@@ -1,4 +1,4 @@
-import kivy, sys, os, json, re
+import kivy, sys, os, json, re, subprocess, webbrowser
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.tabbedpanel import TabbedPanel
@@ -14,12 +14,20 @@ class MainWidget(FloatLayout):
 	selectedProduct = []
 	#Size defaults to medium
 	selectedSize = 'Medium'
+	#Crust type defaults to Deep Pan
+	selectedCrust = 'Deep Pan'
 	#Quantity defaults to 1
 	selectedQuantity = 1
 	#used to store the entire bill. Could be useful later
 	#for adding, removing, and editing products from the list
 	allProducts = []
 	
+	def is_number(self, s):
+		try:
+			float(s)
+			return True
+		except ValueError:
+			return False
 	#run each time the 'add <itemtype>' button is pressed
 	def add_item(self, instance):
 		#add our item to the list of items
@@ -35,7 +43,7 @@ class MainWidget(FloatLayout):
 	
 	#Monster function that will keep the receipt up to date
 	def update_receipt(self):
-		self.receipt.text = ""
+		self.receipt.text = "Insert pizza place name here\n"
 		total = float(0)
 		for i, product in enumerate(self.allProducts):
 			productBill = ""
@@ -50,7 +58,7 @@ class MainWidget(FloatLayout):
 		for subProduct in self.selectedProduct:
 			subTotal += self.get_price(subProduct.text)
 			productBill += "%s $%s\n\t"%(subProduct.text, self.get_price(subProduct.text))
-		self.receipt.text += 'Current Item:\n\t%s %s\n\t%s\n\tSubtotal: $%s\n'%(self.selectedQuantity, self.selectedSize, productBill, float(subTotal * float(self.selectedQuantity)))
+		self.receipt.text += 'Current Item:\n\t%s %s %s\n\t%s\n\tSubtotal: $%s\n'%(self.selectedQuantity, self.selectedSize, self.selectedCrust, productBill, float(subTotal * float(self.selectedQuantity)))
 		total += subTotal * float(self.selectedQuantity)
 		self.receipt.text += 'Total: $%s'%(total)
 		
@@ -73,10 +81,19 @@ class MainWidget(FloatLayout):
 		self.selectedSize = instance.text
 		self.update_receipt()
 	
+	#run each time a crust type is selected
+	def select_crust(self, instance):
+		self.selectedCrust = instance.text
+		self.update_receipt()
+	
 	#run each time the quantity is submitted
 	def select_quantity(self, instance):
+		instance.text = u"%s"%(instance.text)
+		if not self.is_number(instance.text):
+			instance.text = u"1"
 		self.selectedQuantity = instance.text
 		self.update_receipt()
+			
 	
 	#run at start up to initialize the pizza tab
 	def pizza_init(self):
@@ -145,7 +162,14 @@ class MainWidget(FloatLayout):
 		if appended == 0:
 			self.allProducts.append({"selected": [instance,], "quantity": 1, "size":"Drink"})
 		self.update_receipt()
-		
+	def print_receipt(self):
+		try:
+			subprocess.call('lp',self.receipt.text)
+		except:
+			print "Unable to find printer. Please ensure cups is installed correctly and your printer is installed and set to default"
+	def display_help(self):
+		url = "http://github.com/Taiiwo/College"
+		webbrowser.open_new_tab(url)
 class MainApp(App):
 	def build(build):
 		return MainWidget()

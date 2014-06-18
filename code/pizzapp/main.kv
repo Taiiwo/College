@@ -33,6 +33,19 @@
 							group: 'size'
 							text: 'Large'
 							on_press: root.select_size(self)
+						ToggleButton:
+							group: 'crust'
+							text: 'Thin'
+							on_press: root.select_crust(self)
+						ToggleButton:
+							group: 'crust'
+							text: 'Deep Pan'
+							on_press: root.select_crust(self)
+						ToggleButton:
+							group: 'crust'
+							text: 'Stuffed'
+							on_press: root.select_crust(self)
+
 						Label:
 							text: 'Quantity:'
 						TextInput:
@@ -53,15 +66,20 @@
 		BoxLayout:
 			size_hint: 0.4, 1
 			orientation: 'vertical'
+			Button:
+				size_hint: 1, 0.1
+				text: "?"
+				on_press: root.display_help()
 			TextInput:
 				id: receipt
-				size_hint: 1, 0.9
+				size_hint: 1, 0.8
 			BoxLayout:
 				orientation: 'horizontal'
 				size_hint: 1, 0.1
 				Button:
 					text: 'Go!'
 					size_hint: 0.9, 1
+					on_press: root.print_receipt()
 				Button:
 					text: 'X'
 					size_hint: 0.1, 1
