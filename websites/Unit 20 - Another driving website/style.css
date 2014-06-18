@@ -44,17 +44,8 @@ a:active {
 .inset{
 	box-shadow: inset 3px 4px 5px rgba(0,0,0,0.5);
 }
-#header{
-	position: relative;
-	display: inline-block;
-	width:100%;
-	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
-		linear-gradient(
-			75deg,
-			#FF7088 15%,
-			#F2B69D 55%
-		)
-	;
+.shadow{
+	text-shadow: 3px 4px 5px rgba(0,0,0,0.3);
 }
 .white{
 	color:white;
@@ -77,18 +68,6 @@ h2{
 .inline2{
 	display: inline;
 }
-#block2{
-	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
-		linear-gradient(
-			75deg,
-			#FF7088 15%,
-			#F2B69D 55%
-		)
-	;
-}
-#links {
-	width:100%;
-}
 .middle {
 	overflow: hidden;
 	height: 0px;
@@ -100,13 +79,22 @@ end{
 	display: block;
 	height: 200px;
 }
-flleft{
+.flleft{
 	display: inline;
 	float: left;
 }
-flright{
+.flright{
 	display: inline;
 	float: right;
+}
+.sexybg{
+	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
+		linear-gradient(
+			75deg,
+			#FF7088 15%,
+			#F2B69D 55%
+		)
+	;
 }
 #submit{
 	position: relative;
@@ -114,4 +102,27 @@ flright{
 	display: block;
 	vertical-align:middle;
 }
-
+#header{
+	position: relative;
+	display: inline-block;
+	width:100%;
+	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
+		linear-gradient(
+			75deg,
+			#FF7088 15%,
+			#F2B69D 55%
+		)
+	;
+}
+#links {
+	width:100%;
+}
+#block2{
+	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
+		linear-gradient(
+			75deg,
+			#FF7088 15%,
+			#F2B69D 55%
+		)
+	;
+}
