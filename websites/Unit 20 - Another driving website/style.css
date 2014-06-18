@@ -8,21 +8,23 @@ body, html{
 	display: inline-block;
 	color:#2C2C2C;
 }
-a:link {
-    text-decoration: none;
+a {
 	color: white;
+}
+a:link {
+	text-decoration: none;
 }
 
 a:visited {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 a:active {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 .center{
 	position: relative;
@@ -33,17 +35,26 @@ a:active {
 	text-align:left;
 }
 .drop{
-	top: 200px;
+	margin-top: 200px;
 }
 .lildrop{
-	top:100px;
+	margin-top:100px;
+	display: block;
+}
+.inset{
+	box-shadow: inset 3px 4px 5px rgba(0,0,0,0.5);
 }
 #header{
 	position: relative;
 	display: inline-block;
 	width:100%;
-	height: 500px;
-	background-image:url('img/header.jpg');
+	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
+		linear-gradient(
+			75deg,
+			#FF7088 15%,
+			#F2B69D 55%
+		)
+	;
 }
 .white{
 	color:white;
@@ -67,9 +78,40 @@ h2{
 	display: inline;
 }
 #block2{
-	background-image:url('img/header.jpg');
-	height: 500px;
+	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
+		linear-gradient(
+			75deg,
+			#FF7088 15%,
+			#F2B69D 55%
+		)
+	;
 }
 #links {
 	width:100%;
 }
+.middle {
+	overflow: hidden;
+	height: 0px;
+	width: 100%;
+	background: white;
+}
+end{
+	width: 100%;
+	display: block;
+	height: 200px;
+}
+flleft{
+	display: inline;
+	float: left;
+}
+flright{
+	display: inline;
+	float: right;
+}
+#submit{
+	position: relative;
+	top: -23px;
+	display: block;
+	vertical-align:middle;
+}
+

@@ -4,7 +4,7 @@
 	<meta charset=utf-8 />
 	<title>Pass-IT Driving School - Homepage</title>
 	<link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://mootools.net/download/get/mootools-core-1.5.0-full-compat.js"></script>
 	<!--[if IE]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -12,13 +12,14 @@
 <body>
 	<div id="header" />
 		<h1 class="white center drop"> Pass-IT Driving School</h1>
-		<h2 class="white center drop">The best place to learn how to drive</h2>
+		<h2 class="white center">The best place to learn how to drive</h2>
+		<end/>
 	</div>
 	<div id="content">
-		<div id="block1">
+		<div id="block1" class="inset">
 		
 			<br />
-			<h1 class="center">
+			<h1 class="center lildrop">
 				Look at our offers
 			</h1>
 			<br />
@@ -66,16 +67,56 @@
 					</ul>
 				</div>
 			</div>
-			<br />
+			<end />
 		</div>
 		<div id="block2">
+			<br />
 			<h1 class="lildrop center white">Join us now.</h1>
-			<div id="links" class="drop center">
-				<a class="inline hspace" href="login.html"><h2>Login</h2></a>
-				<a class="inline hspace" href="register.html"><h2>Register</h2></a>
+			<div id="links" class="center">
+				<a href="#" ><h2 class="inline hspace login split">Login</h2></a>
+				<a href="#" ><h2 class="inline hspace register split">Register</h2></a>
+				<div class="login middle inset">
+					<form action="#" method="POST">
+						<h2 class="center lildrop">Give us your details, and we'll log you in as fast as we can.</h2>
+						<br />
+						<input type="text" name="username" placeholder="Username">
+						<br />
+						<input type="submit" value="Login" />
+						<br />
+						<input type="password" name="password" placeholder="Password" />
+					</form>
+				</div>
+				<div class="register middle inset">
+					<form action="#" method="POST">
+						<h2 class="center lildrop">We'll need a few things before we pencil you in.</h2>
+						<br />
+						<div class="inline">
+							<input type="text" name="username" placeholder="Username" />
+							<br />
+							<input  type="text" name="email" placeholder="Email Address" />
+							<br />
+							<input  type="text" name="fname" placeholder="First Name" />
+						</div>
+						<div class="inline">
+							<input id="submit" type="submit" value="Register" />
+						</div>
+						<div class="inline">
+							<input type="text" name="lname" placeholder="Last Name" />
+							<br />
+							<input type="password" name="password" placeholder="Password" />
+							<br />
+							<input type="password" name="confpassword" placeholder="Confirm Password" />
+						</div>
+					</form>
+				</div>
+				<end />
 			</div>
 			
 		</div>
+		<div id="footer">
+			<h2 class="center">Copyright Taiiwo Llort 2014</h2>
+		</div>
 	</div>
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
