@@ -5,13 +5,21 @@ $$('.login.split').addEvent('click', function(event){
 $$('.register.split').addEvent('click', function(event){
 	split( $$('.register.middle')[0], 300, event);
 });
-
+var openSplit = "";
 function split(middle, height, event){
-    
-    if( '0px' == middle.getStyle('height') ){
-        middle.tween('height', height);
-    }else{
-        middle.tween('height', '0');
-    }
-    event.preventDefault();
+	if( '0px' == middle.getStyle('height') ){
+		//Close current split if exists
+		if (openSplit != ""){
+			openSplit.tween('height', '0');
+		}
+		//Set new open split
+		openSplit = middle;
+		//Open the new split
+		middle.tween('height', height);
+	}
+	else{
+		openSplit = "";
+		middle.tween('height', '0');
+	}
+	event.preventDefault();
 }
