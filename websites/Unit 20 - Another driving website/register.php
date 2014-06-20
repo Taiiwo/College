@@ -38,7 +38,7 @@ if (	array_key_exists( 'fname',		$_POST) &&
 	}
 	$request = $db->query("SELECT `email` FROM `users` WHERE `email` = '$email'");
 	if ($request->num_rows > 0){
-		errorScreen('Email in Use', "This email address it already in use in the
+		errorScreen('Email in Use', "This email address is already in use in the
 		database. Please try another.");
 	}
 	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -46,6 +46,11 @@ if (	array_key_exists( 'fname',		$_POST) &&
 	}
 	if (!preg_match('/^.{2,60}$/', $password)){
 		errorScreen('Invalid Password', $genericErrorDesc);
+	}
+	$request = $db->query("SELECT `username` FROM `users` WHERE `username` = '$username'");
+	if ($request->num_rows > 0){
+		errorScreen('Username in Use', "This username is already in use in the
+		database. Please try another.");
 	}
 	if (!preg_match('/^[\w-]{2,20}$/', $username)){
 		errorScreen('Invalid Username', $genericErrorDesc);
@@ -65,8 +70,9 @@ if (	array_key_exists( 'fname',		$_POST) &&
 	//add data into database
 	$db->query($query);
 	//give user ID cookie
-	setcookie("sessionCookie", sha1($username.$password));
-	//send to controlpanel, they should now be authed forever.
+	setcookie("sessionCookie", sha1($username.sha1($password)));
+	setcookie("userID", $username);
+	//send to controlpanel, they should now be authed ~forever.
 	header("Location: controlpanel.php");
 	die();
 }
