@@ -73,8 +73,8 @@
 			<br />
 			<h1 class="lildrop center shadow white">Join us now.</h1>
 			<div id="links" class="center">
-				<a href="#" ><h2 class="shadow inline hspace login split">Login</h2></a>
-				<a href="#" ><h2 class="shadow inline hspace register split">Register</h2></a>
+				<h2 class="white shadow inline hspace login split">Login</h2>
+				<h2 class="white shadow inline hspace register split">Register</h2>
 				<div class="login middle inset">
 					<form action="#" method="POST">
 						<h2 class="center lildrop">Give us your details, and we'll log you in as fast as we can.</h2>
@@ -87,25 +87,35 @@
 					</form>
 				</div>
 				<div class="register middle inset">
-					<form action="#" method="POST">
+					<form action="./register.php" method="POST">
 						<h2 class="center lildrop">We'll need a few things before we pencil you in.</h2>
 						<br />
 						<div class="inline">
-							<input type="text" name="username" placeholder="Username" />
+							<input title=
+								"Can only contain A-z, 0-9, '_', and '-'"
+								type="text" maxlength="20" pattern="(\w|-)+" name="username" placeholder="Username" />
 							<br />
-							<input  type="text" name="email" placeholder="Email Address" />
+							<input type="email" maxlength="30" pattern=".+@.+\..{2,}" name="email" placeholder="Email Address" />
 							<br />
-							<input  type="text" name="fname" placeholder="First Name" />
+							<input  title=
+								"Can only contain A-z, and '-'"
+								type="text" maxlength="35" pattern="[(a-z|A-Z)-]+" name="fname" placeholder="First Name" />
 						</div>
 						<div class="inline">
 							<input id="submit" type="submit" value="Register" />
 						</div>
 						<div class="inline">
-							<input type="text" name="lname" placeholder="Last Name" />
+							<input title=
+								"Can only contain A-z, 0-9, '_', and '-'"
+								type="text" maxlength="35" pattern="[(a-z|A-Z)-]+" name="lname" placeholder="Last Name" />
 							<br />
-							<input type="password" name="password" placeholder="Password" />
+							<input title=
+								"Must be longer than 6 characters"
+								type="password" maxlength="60" pattern=".{6,}" name="password" placeholder="Password" />
 							<br />
-							<input type="password" name="confpassword" placeholder="Confirm Password" />
+							<input title=
+                                                                "Must be longer than 6 characters"
+								type="password" maxlength="60" pattern=".{6,}" name="confpassword" placeholder="Confirm Password" />
 						</div>
 					</form>
 				</div>
