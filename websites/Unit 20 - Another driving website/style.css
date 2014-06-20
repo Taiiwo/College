@@ -44,6 +44,9 @@ a:active {
 .inset{
 	box-shadow: inset 3px 4px 5px rgba(0,0,0,0.5);
 }
+.boxShadow{
+	box-shadow: 3px 4px 5px rgba(0,0,0,0.3);
+}
 .shadow{
 	text-shadow: 3px 4px 5px rgba(0,0,0,0.3);
 }
