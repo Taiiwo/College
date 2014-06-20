@@ -96,6 +96,9 @@ end{
 		)
 	;
 }
+.split{
+	cursor:pointer;
+}
 #submit{
 	position: relative;
 	top: -23px;
