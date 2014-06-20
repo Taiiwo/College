@@ -89,6 +89,24 @@ end{
 }
 .sexybg{
 	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
+		-webkit-gradient(
+		linear,
+		left bottom,
+		left bottom,
+		color-stop(0.5, #F2B69D),
+		color-stop(1, #FF7088)
+	);
+	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
+			-o-linear-gradient(left bottom, #F2B69D 50%, #FF7088 100%);
+	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
+			-moz-linear-gradient(left bottom, #F2B69D 50%, #FF7088 100%);
+	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
+			-webkit-linear-gradient(left bottom, #F2B69D 50%, #FF7088 100%);
+	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
+			-ms-linear-gradient(left bottom, #F2B69D 50%, #FF7088 100%);
+	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
+			linear-gradient(to left bottom, #F2B69D 50%, #FF7088 100%);
+	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
 		linear-gradient(
 			75deg,
 			#FF7088 15%,
@@ -109,23 +127,9 @@ end{
 	position: relative;
 	display: inline-block;
 	width:100%;
-	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
-		linear-gradient(
-			75deg,
-			#FF7088 15%,
-			#F2B69D 55%
-		)
-	;
 }
 #links {
 	width:100%;
 }
 #block2{
-	background-image: url('http://html5up.net/uploads/demos/telephasic/css/images/header.svg'),
-		linear-gradient(
-			75deg,
-			#FF7088 15%,
-			#F2B69D 55%
-		)
-	;
 }
