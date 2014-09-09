@@ -1,0 +1,38 @@
+font-family: 'Open Sans', sans-serif;
+
+#rightbar {
+    width: 30%;
+        
+}
+
+#leftbar {
+    margin-top:10px;
+    float:left;
+    width: 60%;
+}
+
+.banner {
+    background:red;
+    width: 100%;
+    height: 100px
+}
+
+.article {
+    height: 100px;
+}
+
+.header {
+    float:none;
+}
+
+.nav {
+    margin-left:20px;
+    display:inline;
+}
+
+.right {
+    float: right;
+}
+
+.content {
+}
