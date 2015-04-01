@@ -3,7 +3,8 @@ $('#fullpage').fullpage({
 	sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
 	navigation: true,
 	navigationPosition: 'right',
-	navigationTooltips: ['1', '2', '3']
+	navigationTooltips: ['1', '2', '3'],
+	slidesNavigation: true
 });
 var colours = [
 	Trianglify.colorbrewer.YlGn,
