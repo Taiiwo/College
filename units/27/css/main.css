@@ -13,7 +13,10 @@ h2 {
 }
 p, li {
 	font-size: 28px;
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-left: 150px;
+	margin-right: 150px;
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.43);
+}
+li {
+	/*list-style-image: url('../images/bullet.png');*/
 }
