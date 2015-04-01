@@ -11,14 +11,16 @@ h1 {
 h2 {
 	font-size: 62px;
 }
-p, li {
-	font-size: 28px;
+p {
 	margin-left: 150px;
 	margin-right: 150px;
+}
+p, li {
+	font-size: 28px;
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.43);
 }
-ul {
-	display: inline-block;
+xmd > ul {
+	/*display: inline-block;*/
 	margin: auto;
 }
 li {
