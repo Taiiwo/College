@@ -76,12 +76,12 @@ html, body {
     left: 15px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    border-color: transparent #333 transparent transparent;
 }
 .fp-controlArrow.fp-next {
     right: 15px;
     border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    border-color: transparent transparent transparent #333;
 }
 .fp-scrollable {
     overflow: scroll;
@@ -94,12 +94,12 @@ html, body {
     position: fixed;
     z-index: 100;
     margin-top: -32px;
-    top: 50%;
+    top: 70px;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
 }
 #fp-nav.right {
-    right: 17px;
+    right: 40px;
 }
 #fp-nav.left {
     left: 17px;
