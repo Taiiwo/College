@@ -1,9 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
-h1, h2, h3, h4, h5, p, span, li {
+h1, h2, h3, h4, h5, p, span{
 	text-align: center;
 	margin: auto;
 	color: white;
 	font-family: "Open Sans", Ariel;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	animation: fadein 2s;
 }
 h1 {
 	font-size: 74px;
@@ -17,12 +19,22 @@ p {
 }
 p, li {
 	font-size: 28px;
-	text-shadow: 0 0 20px rgba(0, 0, 0, 0.43);
 }
-xmd > ul {
-	/*display: inline-block;*/
+xmd > ul , xmd > ol{
 	margin: auto;
+	max-width: 900px;
 }
 li {
-	/*list-style-image: url('../images/bullet.png');*/
+  text-align: center;
+	color: white;
+	font-family: "Open Sans", Ariel;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	animation: fadein 1s;
+}
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
 }

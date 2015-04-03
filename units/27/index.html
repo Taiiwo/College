@@ -22,14 +22,20 @@
 
 <div id="fullpage">
 	<div class="section" id="section0">
-		<div class="intro" theme="united">
+		<div class="intro">
 			<xmd>
 Web Server Scripting
 ====================
-### Unit 27 - Assignment 1 - Task 1
+### *Unit 27 - Assignment 1 - Task 1*
 
-This document will overview the different tools used in website server
-scripting and compare their use in certain business situations.
+This document will compare server-side and client-side scripting, and look at their advantages and disadvantages.
+
+To navigate this document either:
+
+0. Use the scroll wheel and click the on-screen arrows
+0. Use the arrow keys
+0. If you're on a mobile device, swipe the screen in the desired direction
+0. Use a combination of the above
 			</xmd>
 		</div>
 	</div>
@@ -37,8 +43,8 @@ scripting and compare their use in certain business situations.
 		<div class="slide">
 			<div class="intro">
 				<xmd>
-Web Server Scripting Language
------------------------------
+Web Server Scripting Languages
+------------------------------
 
 There are many different languages that can be used for server-side scripting
 as there are many different web server softwares allow for different languages
@@ -49,8 +55,8 @@ are languages, with the inclusion of languages that were built specifically for
 server side scripting, there exists a few languages that are commonly used over
 the rest:
 
-- PHP
-- ASP.NET
+- PHP - PHP: Hypertext Pre-processor
+- ASP.NET - Active Server Pages
 - Python
 - Perl
 				</xmd>
@@ -75,8 +81,8 @@ servers, and the inherent advantages of it being open-source.
 ASP.NET - Active Server Pages
 -----------------------------
 
-ASP.NET was a scripting language created by the Microsoft Corporation. It was 
-originally added to Microsoft's IIS server as an addon, but is now a standard 
+ASP.NET was a scripting language created by the Microsoft Corporation. It was
+originally added to Microsoft's IIS server as an addon, but is now a standard
 component in the build.
 				</xmd>
 			</div>
@@ -87,9 +93,9 @@ component in the build.
 Python
 ------
 
-Python is an interperated language that was created as a high level scripting 
-language, not a web server scripting language. Using premade webservers written 
-in Python, or using existing web server software such as Apache or nGinX, it is 
+Python is an interperated language that was created as a high level scripting
+language, not a web server scripting language. Using premade webservers written
+in Python, or using existing web server software such as Apache or nGinX, it is
 possible for you to use mods to execute the Python scripts.
 				</xmd>
 			</div>
@@ -100,22 +106,19 @@ possible for you to use mods to execute the Python scripts.
 Perl
 ------
 
-Using premade webservers written in Perl, or using existing web server software 
-such as Apache or nGinX, it is possible for you to use mods to execute the Perl 
-scripts. Perl is an interperated language that was created as a high level 
+Using premade webservers written in Perl, or using existing web server software
+such as Apache or nGinX, it is possible for you to use mods to execute the Perl
+scripts. Perl is an interperated language that was created as a high level
 scripting language, not a web server scripting language.
 				</xmd>
 			</div>
 		</div>
-		
-=======
-
 	</div>
 	<div class="section" id="section2">
 		<div class="slide">
 			<div class="intro">
 				<xmd>
-Processing: Static vs. Dynamic
+Static vs. Dynamic
 ------------------------------
 
 ### *Static*
@@ -134,36 +137,82 @@ Dynamic webpages are webpages that have content that changes dynamically. The in
 		<div class="slide">
 			<div class="intro">
 				<xmd>
-Processing: Client-Side vs. Server-Side
-------------------------------
+Client-Side vs. Server-Side
+---------------------------------------
 
 ### *Server-Side*
-Server-side scripting allows programs to modify the contents of the HTML that is sent to the client side.
+Server-side scripting allows programs to modify the contents of the HTML that is sent to the client-side. This can be useful as the code is never seen by the client, and therefore they cannot see how the data on the page has been put there. You will see this a lot with companies that don't want you to be able to see their methods. Another advantage of server-side scripting is that secure functions may be run. Things like accessing databases and running high priority software on the server can be done from server-side languages. This is useful when you don't want the client to have access to certain functions for security reasons.
 
 ### *Client-Side*
-test
+Client-side code is code that runs inside the browser. It does not need the page to reload to execute, and therefore it can make the page dynamic and responsive. There have been developed many pre-written libraries for doing all sorts of amazing things. For example, behind this text, you can see the output of Trianglify.js. This dynamically creates large SVG images for use as page backgrounds, and signifigantly speeds up page loads over useing large images as backgrounds.
 				</xmd>
 			</div>
 		</div>
 	</div>
+	<div class="section" id="section3">
+		<div class="slide">
+			<div class="intro">
+				<xmd>
+Examples of Server-side Scripting 1
+-------------------------------------------------
+
+One example of a use of server-side scripting is in a login system. Login systems are used to identify users. They are fairly simple, but it's very important that it's secure. A server-side login system could allow users to register a username and password, and store it in the database. The system can then assign information to that person's identity, and use the fact that they know the username-password combination to verify that they are the person they say they are.
+				</xmd>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<xmd>
+Examples of Server-side Scripting 2
+-------------------------------------------------
+
+Another example of a server-side scripting application is that of a shopping cart system. This allows a user have a list of items saved across pages that they can use to buy more than one thing at once. This can be done by storing the items in a database table, with one field as the userID, and the other as the itemID.
+				</xmd>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<xmd>
+Examples of Server-side Scripting 3
+-------------------------------------------------
+
+Another use of server-side scripting is using the ability to upload files to the server. Using a HTML form with a file selector, you can send files in POST to a server side script. The server will take the POST data from the HTTP request and save the file to a location on the server storage. This can then be accessable from the same webserver, for download or viewing.
+				</xmd>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section4">
+		<div class="intro">
+			<xmd>
+Advantages and Disadvantages of Server-Side Scripting
+---------------------------------------------------------------
+
+### *Advantages:*
+
+- Can run high security code without being shown to the public
+- Can run functions that are unavailable to the client-side
+
+### *Disadvantages:*
+
+- Significant server load for complex functions over a large userbase
+- Inherent security risks of an interpreted language with full machine access
+			</xmd>
+		</div>
+	</div>
+	<div class="section" id="section5">
+		<div class="intro">
+			<xmd>
+How PHP can Improve Accessibility
+-------------------------------------------------
+
+Things like changing font sizes and faces are best suited to client-side scripting, but the ability to have these settings remain from browser to browser, the use of server-side scripting is required.
+
+While the user will still be required to log in to access these settings, their prefered font settings and other such accessibility setting could be saved to their user information in the database, and when the client-side is pulling down profile information such as your name, it could also be pulling down your display settings, and changing the webpage to match.
+			</xmd>
+		</div>
+	</div>
 </div>
-/*
-Processing – static vs dynamic and difference between server side and client
-side scripting e.g. Javascript
 
-Functionality – describe three things that server side scripting can be used
-for e.g. shopping karts, reserve order, manage user profile, web content
-management, upload files, website analysis
-
-Features - describe two advantages e.g. interpreted scripts as alternative to
-compiled code, run as lower overhead code inside web server plugins, hide web
- server interface inside economical APIs; and two disadvantages e.g. increased
- complexity, reduced performance, code is interpreted not compiled; of web
- server scripting
-
-Accessibility – features that improve client user experience e.g. alternative text, resizable fonts, support for screen readers, adjustable fonts; that can be incorporated through web server scripting
-
-*/
 <script src="http://softwaremaniacs.org/playground/showdown-highlight/showdown.js"></script>
 <script src="js/main.js"></script>
 </body>
