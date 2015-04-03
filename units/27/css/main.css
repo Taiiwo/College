@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
-h1, h2, h3, h4, h5, p, span{
+h1, h2, h3, h4, h5, p, span, th{
 	text-align: center;
 	margin: auto;
 	color: white;
@@ -30,6 +30,13 @@ li {
 	font-family: "Open Sans", Ariel;
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 	animation: fadein 1s;
+}
+xmd > table {
+	margin: auto;
+}
+th {
+	font-size: 32px;
+	text-align: center !important;
 }
 @keyframes fadein {
 	from {

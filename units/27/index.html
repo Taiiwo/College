@@ -35,6 +35,7 @@ To navigate this document either:
 0. Use the scroll wheel and click the on-screen arrows
 0. Use the arrow keys
 0. If you're on a mobile device, swipe the screen in the desired direction
+0. Click the navigation dots in the top right and bottom middle where applicable
 0. Use a combination of the above
 			</xmd>
 		</div>
@@ -48,7 +49,7 @@ Web Server Scripting Languages
 
 There are many different languages that can be used for server-side scripting
 as there are many different web server softwares allow for different languages
-and interperiters to control output of files. This basically means that any
+and interpreters to control output of files. This basically means that any
 language that can output text can also be used for web server scripting.
 However, due to the syntax and inbuilt functions of certain languages, there
 are languages, with the inclusion of languages that were built specifically for
@@ -93,8 +94,8 @@ component in the build.
 Python
 ------
 
-Python is an interperated language that was created as a high level scripting
-language, not a web server scripting language. Using premade webservers written
+Python is an interpreted language that was created as a high level scripting
+language, not a web server scripting language. Using pre-made webservers written
 in Python, or using existing web server software such as Apache or nGinX, it is
 possible for you to use mods to execute the Python scripts.
 				</xmd>
@@ -106,9 +107,9 @@ possible for you to use mods to execute the Python scripts.
 Perl
 ------
 
-Using premade webservers written in Perl, or using existing web server software
+Using pre-made webservers written in Perl, or using existing web server software
 such as Apache or nGinX, it is possible for you to use mods to execute the Perl
-scripts. Perl is an interperated language that was created as a high level
+scripts. Perl is an interpreted language that was created as a high level
 scripting language, not a web server scripting language.
 				</xmd>
 			</div>
@@ -130,7 +131,7 @@ either the server-side, or the client-side. Static webpages are written entirely
 in HTML and CSS.
 
 ### *Dynamic*
-Dynamic webpages are webpages that have content that changes dynamically. The information on the webpage can be different on each page load, or even while the page is being displayed. This allows web developers to add content to websites that makes websites more interactive, such as having slide-in navivation bars, or, I don't know, something like a webpage you can navigate entirely with the arrow keys ;)
+Dynamic webpages are webpages that have content that changes dynamically. The information on the webpage can be different on each page load, or even while the page is being displayed. This allows web developers to add content to websites that makes websites more interactive, such as having slide-in navigation bars, or, I don't know, something like a webpage you can navigate entirely with the arrow keys ;)
 				</xmd>
 			</div>
 		</div>
@@ -144,7 +145,7 @@ Client-Side vs. Server-Side
 Server-side scripting allows programs to modify the contents of the HTML that is sent to the client-side. This can be useful as the code is never seen by the client, and therefore they cannot see how the data on the page has been put there. You will see this a lot with companies that don't want you to be able to see their methods. Another advantage of server-side scripting is that secure functions may be run. Things like accessing databases and running high priority software on the server can be done from server-side languages. This is useful when you don't want the client to have access to certain functions for security reasons.
 
 ### *Client-Side*
-Client-side code is code that runs inside the browser. It does not need the page to reload to execute, and therefore it can make the page dynamic and responsive. There have been developed many pre-written libraries for doing all sorts of amazing things. For example, behind this text, you can see the output of Trianglify.js. This dynamically creates large SVG images for use as page backgrounds, and signifigantly speeds up page loads over useing large images as backgrounds.
+Client-side code is code that runs inside the browser. It does not need the page to reload to execute, and therefore it can make the page dynamic and responsive. There have been developed many pre-written libraries for doing all sorts of amazing things. For example, behind this text, you can see the output of Trianglify.js. This dynamically creates large SVG images for use as page backgrounds, and significantly speeds up page loads over using large images as backgrounds.
 				</xmd>
 			</div>
 		</div>
@@ -176,7 +177,7 @@ Another example of a server-side scripting application is that of a shopping car
 Examples of Server-side Scripting 3
 -------------------------------------------------
 
-Another use of server-side scripting is using the ability to upload files to the server. Using a HTML form with a file selector, you can send files in POST to a server side script. The server will take the POST data from the HTTP request and save the file to a location on the server storage. This can then be accessable from the same webserver, for download or viewing.
+Another use of server-side scripting is using the ability to upload files to the server. Using a HTML form with a file selector, you can send files in POST to a server side script. The server will take the POST data from the HTTP request and save the file to a location on the server storage. This can then be accessible from the same webserver, for download or viewing.
 				</xmd>
 			</div>
 		</div>
@@ -205,15 +206,147 @@ Advantages and Disadvantages of Server-Side Scripting
 How PHP can Improve Accessibility
 -------------------------------------------------
 
-Things like changing font sizes and faces are best suited to client-side scripting, but the ability to have these settings remain from browser to browser, the use of server-side scripting is required.
+Things like changing font sizes and faces are best suited to client-side scripting, but the ability to have these settings remain from browser to browser requires the use of server-side scripting.
 
-While the user will still be required to log in to access these settings, their prefered font settings and other such accessibility setting could be saved to their user information in the database, and when the client-side is pulling down profile information such as your name, it could also be pulling down your display settings, and changing the webpage to match.
+While the user will still be required to log in to access these settings, their preferred font settings and other such accessibility settings could be saved to their user information in the database, and when the client-side is pulling down profile information such as your name, it could also be pulling down your display settings, and changing the webpage to match.
 			</xmd>
 		</div>
 	</div>
+	<div class="section" id="section6">
+		<div class="intro">
+			<xmd>
+Server-Side vs. Client-Side
+---------------------------
+
+| Functionality			| Client-Side | Server-Side | Example |
+|-------------------|-------------|-------------|---------|
+| Shell access			| &#10007;		| &#10003;		| Server maintenance through a web interface |
+| Visually dynamic	| &#10003;		| &#10007;		| Drop-down menus |
+| Access to internet| &#10007;		| &#10003;		| Access to external APIs |
+| Visible to public | &#10003;		| &#10007;		| The user is able to read the code before it is executed |
+
+			</xmd>
+		</div>
+	</div>
+	<div class="section" id="section7">
+		<div class="slide">
+			<div class="intro">
+				<xmd>
+Real-life Examples of Server/Client-Side Combos
+-----------------------------------------------
+These slides give 3 examples of real life websites that use a combination of server-side and client-side scripting to take advantage of both of their strenghts.
+				</xmd>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<xmd>
+Example 1 - MDPro by Taiiwo
+---------------------------
+MDPro is a markdown editor for the browser that is completely free and allows exportation to almost every format imaginable. The website uses client-side scripting for all of the text rendering, drop down menus, styles, and text editing; but uses server-side scripting for converting the markdown into the desired format, as this process is too complicated for the front end to handle, and will probably only be executed once or twice.
+
+![Image of MDPro](http://i.imgur.com/onHFUQ1.png)
+				</xmd>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<xmd>
+Example 2 - HackPanel by NottingHackers
+---------------------------------------
+HackPanel is a modular dashboard for hackathons. It aims to be a little like Wolfram Alpha, but for more social and real time things, like who's doing what. You simply type in the event you want to see live information on in the top, and the app will search for relevant plugins for your search, and puts them in little movable boxes. The movable plugin boxes are entirely client-side code, but the plugin data itself is loaded in from the server-side.
+
+![Image of HackPanel](https://archive.is/UNlzp/40bf211c17f343d232678b2389ece4c4f6d82e6e)
+				</xmd>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<xmd>
+Example 3 - TheScoop by TheSpoons
+---------------------------------
+The Scoop aggregates popular news links from a time frame. On expanding these links, a summary of the article is generated. The links are displayed in a minimalist, mobile friendly list that uses client-side scripting to expand on click, then uses and AJAX request to the local server to execute the OTS Unix binary, then returns the summarised article.
+![TheScoop image](https://archive.is/HQx6X/9a414713289a97ac5f493e0c771e77d3a5a6d45a)
+				</xmd>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section8">
+		<div class="slide">
+			<div class="intro">
+				<xmd>
+Security Issues
+---------------
+Using server-side scripting opens some large holes in security, and pushes into some controversial ground in terms of ethics.
+				</xmd>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<xmd>
+Server-Side Security Issues
+---------------------------
+
+Server-side code has comparatively and infinitely higher level of authority over the server machine when compaired to client-side. For this reason, when we look a the drawbacks of server-side scripting, it hold a considerable threat in respect to the heightened possibility of security vulnerabilities due to improperly sanitised user-input.
+
+Server-side code almost always takes in data from the user, and if this data is not handled properly, it may be possible to format the data in a way that is able to take over the server-side interpretor, giving an attacker some access to the server machine.
+				</xmd>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<xmd>
+Issues in Server-Side Ethics
+----------------------------
+
+When dealing with server-side scripting, it cannot be ignored that a user's data must be passed through a centralised source before it is used. This lowers the privacy of the users' information, as the data could be logged or sold on. There is the further dispute that the user is unable to see the code that is executed server-side. Unlike client-side code, which can be read and debugged using the developer tools in your browser; server-side code cannot be viewed in any such way, and thus restricts the user's confidence in the webserver.
+				</xmd>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<xmd>
+Addressing Server-Side Security
+-------------------------------
+As outlined in previous pages, server-side scripting has considerable drawbacks in terms of security. To the extent that most web developers try to use as little of it as possible. For some things, it's needed, so how do we protect our servers from attack?
+
+The trick to making your code safe for public interaction is to be absolutely brutal when it comes to data validation.
+- Make sure that if anything is out of place, your code stops, and does nothing else.
+- Double and triple check your regexes with a regex debugger
+	- Get someone to read your regex and ask them if they can see any exceptions
+- If something is going into a URL, make sure you encode it.
+
+## IF SOMETHING IS BEING USED IN AN SQL QUERY, SQL. ESCAPE. SPECIAL. CHARS.
+This is so dangerous, and will simply allow anyone full access you your database if not handled correctly.
+				</xmd>
+			</div>
+		</div>
+	</div>
+</div>
+<!--
+new slide
+<div class="slide">
+	<div class="intro">
+		<xmd>
+
+		</xmd>
+	</div>
 </div>
 
-<script src="http://softwaremaniacs.org/playground/showdown-highlight/showdown.js"></script>
+new section
+<div class="section" id="section0">
+
+</div>
+
+intro
+<div class="intro">
+	<xmd>
+
+	</xmd>
+</div>
+-->
+<script src="js/showdown.js"></script>
+<script src="js/extensions/table.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
