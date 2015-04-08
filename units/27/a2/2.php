@@ -9,6 +9,7 @@ if (isset($_FILES['file'])) {
   if (filesize($_FILES['file']['tmp_name']) <= 1024){
     exec("rm $target_pat*");
     if(move_uploaded_file($_FILES['file']['tmp_name'], $target_path)) {
+      chmod($target_path, 0666);
       echo "The file <a href='$target_path'>" . basename( $_FILES['file']['name']) . "</a> has been uploaded";
     }
     else{
