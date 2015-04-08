@@ -1,4 +1,5 @@
 <?php
+// live: http://taiiwo.tk/College/units/27/a2/4.php
 $username = "a2";
 $password = "iwasnottaughtthis";
 $hostname = "localhost";

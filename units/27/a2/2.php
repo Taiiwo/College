@@ -1,10 +1,11 @@
 <?php
+// live: http://taiiwo.tk/College/units/27/a2/2.php
 //echo "doing all the PHP";
 //ini_set('display_errors',1);
 //error_reporting(E_ALL);
 if (isset($_FILES['file'])) {
   $target_pat = "./uploads/";
-  $target_path = $target_pat . basename( $_FILES['file']['name']);
+  $target_path = $target_pat . basename($_FILES['file']['name']) . ".txt";
   if (filesize($_FILES['file']['tmp_name']) <= 1024){
     exec("rm $target_pat*");
     if(move_uploaded_file($_FILES['file']['tmp_name'], $target_path)) {
@@ -15,7 +16,7 @@ if (isset($_FILES['file'])) {
     }
   }
   else {
-    echo "Error, files can only be less that 1024 bytes.";
+    echo "Error, files can only be less than 1024 bytes.";
   }
 }
 else {
