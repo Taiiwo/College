@@ -1,0 +1,57 @@
+#section-1, #s1Blur{
+    background-image: url('../img/ClockworkBg.jpg');
+    margin-left: -4px;
+    filter: saturate(0.7);
+}
+#section-1{
+    height: 300px;
+    background-position: center top;
+    text-align: center;
+}
+#s1Blur{
+    background-position: center -30px;
+    filter: blur(4px) brightness(0.6);
+    z-index: 98;
+    position: relative;
+    left: 0;
+    right: 0;
+    height: 240px;
+}
+#s1Dark {
+    margin-top: 30px;
+    display: inline-block;
+    height: 240px;
+    z-index: 99;
+}
+#s1Text{
+    position: relative;
+    top: -235px;
+    z-index: 100;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+#section-2{
+}
+#s2image-1, #s2image-2, #s2Text {
+    display: block;
+    float: left;
+    width: 33.333333333%;
+    height: 800px;
+}
+#s2Text {
+    text-align: center;
+}
+#s2Image-1{
+    background-image: url('../img/s2Image-1.jpg');
+}
+#s2Image-2{
+    background-image: url('../img/s2Image-2.jpg');
+}
+#s2Image-1, #s2Image-2 {
+    background-size: auto 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+}

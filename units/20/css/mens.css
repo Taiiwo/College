@@ -1,0 +1,15 @@
+
+.demo-card-wide.mdl-card {
+    width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../img/ClockworkBg.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+    color: #fff;
+}
+.demo-grid-1.mdl-grid {
+    max-width: 1000px;
+}
