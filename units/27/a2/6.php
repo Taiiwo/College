@@ -1,7 +1,8 @@
 <!--live: http://taiiwo.tk/College/unit/27/a2/6.php-->
 <html>
 <head>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+  </script>
 </head>
 <body>
   <? if (isset($_POST['query'])){// check if we've already been sent some creds
@@ -9,7 +10,7 @@
     $dbUser = "a2";
     $dbPass = "iwasnottaughtthis";
     $host = "localhost";
-    //connection to the database
+    // connection to the database
     $db = mysqli_connect($host, $dbUser, $dbPass)
       or die("Unable to connect to MySQL");
     // select database
@@ -44,7 +45,9 @@
     // if they asked us to register
     elseif ($query == "register") {
       // make a new record in the table
-      $db->query("insert into users (username, password) values ('$user', '$pass')");
+      $db->query(
+        "insert into users (username, password) values ('$user', '$pass')"
+      );
       echo "Registered sucessfully.";
     }
   }

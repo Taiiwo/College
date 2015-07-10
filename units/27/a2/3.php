@@ -1,4 +1,5 @@
 <?php
+// live: http://taiiwo.tk/College/units/27/a2/3.php
 if (isset($_POST['username']) && isset($_POST['password'])){
   if ($_POST['username'] == 'admin' && $_POST['password'] == 'changeme'){
     echo "<h3>Access Granted</h3>";

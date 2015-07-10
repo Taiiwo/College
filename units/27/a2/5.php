@@ -7,7 +7,6 @@
 </head>
 <body>
   <div id="editor"><?
-      // print_r(scandir('uploads/'));
       $filename = scandir('uploads/')[3];
       $fileLoc = "uploads/" . $filename;
       if (isset($_POST["text"])) {

@@ -1,4 +1,5 @@
 <?php
+// live: http://taiiwo.tk/College/units/27/a2/1.php
 // This file gets browser info for use in PHP
 
 // Do we have the info already?
