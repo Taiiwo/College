@@ -13,3 +13,8 @@
 .demo-grid-1.mdl-grid {
     max-width: 1000px;
 }
+@media (max-width: 851px) {
+    .mdl-layout__drawer-button {
+        color: white;
+    }
+}
