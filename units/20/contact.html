@@ -75,25 +75,58 @@
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                         <div class="mdl-textfield mdl-js-textfield">
-                            <input class="mdl-textfield__input" type="text" id="sample1" />
-                            <label class="mdl-textfield__label" for="sample1">Name</label>
+                            <input class="mdl-textfield__input" type="text" id="name" />
+                            <label class="mdl-textfield__label" for="name">Name</label>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield">
-                            <input class="mdl-textfield__input" type="text" id="sample1" />
-                            <label class="mdl-textfield__label" for="sample1">Email</label>
+                            <input class="mdl-textfield__input" type="text" id="email" />
+                            <label class="mdl-textfield__label" for="email">Email</label>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield">
-                            <textarea class="mdl-textfield__input" type="text" id="sample1"></textarea>
-                            <label class="mdl-textfield__label" for="sample1">Message...</label>
+                            <textarea class="mdl-textfield__input" type="text" id="message"></textarea>
+                            <label class="mdl-textfield__label" for="message">Message...</label>
                         </div>
                     </div>
                 </div>
                 <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored sendForm">
-                    <i class="material-icons">send</i>
+                    <i class="material-icons" id="sendMessage">send</i>
                 </button>
             </div>
         </div>
       </main>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        // when the send button is clicked
+        $('#sendMessage').click(function() {
+            // send a post request to the API
+            $.post(
+                "./order.py/contact",
+                {// this is where to get the values from
+                    "name": $('#name').val(),
+                    "email": $('#email').val(),
+                    "details": $('#message').val()
+                },
+                // on success function
+                function (data) {
+                    // clear the form element
+                    $('.contactForm').empty();
+                    // show a confimation message
+                    $('.contactForm')
+                        .append(
+                            $('<h2/>')
+                                .addClass("mdl-card__title-text")
+                                .text("Message Sent!")
+                        )
+                        .append(
+                            $('<div/>')
+                                .addClass("mdl-card__supporting-text")
+                                .text("Your message has been sent to our team.")
+                        );
+                    $('#sendMessage').remove();
+                }
+            );
+        });
+    </script>
 </body>
 </html>
