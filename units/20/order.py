@@ -8,3 +8,7 @@ def index(req):
 def order(req, name, email, details):
     r = "Thanks for ordering, %s" % (name)
     return r
+def contact(req, name, email, message):
+    r = "Thanks for ordering, %s" % (name)
+    return r
+

@@ -109,16 +109,21 @@
                     $('.contactForm').empty();
                     $('.contactForm')
                         .append(
-                            $('<h2/>')
-                                .addClass("mdl-card__title-text")
-                                .text("Order Sent!")
+                            $('<div/>')
+                                .addClass("mdl-card__title")
+                                .append(
+                                    $('<h2/>')
+                                        .addClass("mdl-card__title-text")
+                                        .text("Order Sent!")
+                                )
                         )
                         .append(
                             //<div class="mdl-card__supporting-text">
                             $('<div/>')
                                 .addClass("mdl-card__supporting-text")
-                                .text("Your order has been sent to our team.")
+                                .text(data)
                         );
+                    $('#submitOrder').remove()
                 }
             );
         });

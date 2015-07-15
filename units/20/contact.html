@@ -88,8 +88,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored sendForm">
-                    <i class="material-icons" id="sendMessage">send</i>
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored sendForm" id="sendMessage">
+                    <i class="material-icons">send</i>
                 </button>
             </div>
         </div>
@@ -105,7 +105,7 @@
                 {// this is where to get the values from
                     "name": $('#name').val(),
                     "email": $('#email').val(),
-                    "details": $('#message').val()
+                    "message": $('#message').val()
                 },
                 // on success function
                 function (data) {
@@ -114,9 +114,13 @@
                     // show a confimation message
                     $('.contactForm')
                         .append(
-                            $('<h2/>')
-                                .addClass("mdl-card__title-text")
-                                .text("Message Sent!")
+                            $('<div/>')
+                                .addClass("mdl-card__title")
+                                .append(
+                                    $('<h2/>')
+                                        .addClass("mdl-card__title-text")
+                                        .text("Message Sent!")
+                                )
                         )
                         .append(
                             $('<div/>')
