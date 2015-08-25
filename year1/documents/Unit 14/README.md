@@ -1,7 +1,7 @@
 Deep *Sea* Application
 ====================
 
-### *By Tyler Smith*
+### *By Taiiwo Llort*
 
 #### *Q2 - 2014*
 
@@ -23,18 +23,18 @@ Requirements:
 
 How to use:
 
-1. select toppings by pressing the button with the topping’s name on it
+1. select toppings by pressing the button with the toppingâ€™s name on it
 
 2. Select size using the button with the size written on it
 
 3. Select quantity using the text box, and press enter to confirm
 
-4. Press ‘Add Pizza’ button
+4. Press â€˜Add Pizzaâ€™ button
 
-5. Press ‘X’ to remove the last item
+5. Press â€˜Xâ€™ to remove the last item
 
 6. Select sides, each button press adds a side
 
 7. Drinks, each button press adds a drink
 
-8. Press ‘Go’ to print the order
+8. Press â€˜Goâ€™ to print the order
